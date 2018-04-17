@@ -20,7 +20,16 @@ module.exports = {
   /*
   ** Build configuration
   */
+  plugins: [
+    { src: '~/plugins/slick-slider', ssr: false }
+  ],
+
+  css: [
+    { src: 'node_modules/slick-carousel/slick/slick.css', lang: 'css' }
+  ],
+
   build: {
+    vendor: ['vue-slick'],
     /*
     ** Run ESLint on save
     */
