@@ -33,7 +33,7 @@ module.exports = {
   */
 
   build: {
-    publicPath: '/final-project-team-32/oda-finalproject/',
+    publicPath: '/pages/',
     /*
     ** Run ESLint on save
     */
