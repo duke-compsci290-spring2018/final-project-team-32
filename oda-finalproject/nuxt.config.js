@@ -1,4 +1,15 @@
+/* nuxt.config.js */
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/duke-compsci290-spring2018/final-project-team-32/'
+  }
+} : {}
+
 module.exports = {
+  router: {
+    base: '/duke-compsci290-spring2018/final-project-team-32/'
+  },
   /*
   ** Headers of the page
   */
