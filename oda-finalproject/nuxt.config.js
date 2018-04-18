@@ -2,14 +2,11 @@
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/duke-compsci290-spring2018/final-project-team-32/'
+    base: '/duke-compsci290-spring2018/final-project-team-32/oda-finalproject/'
   }
 } : {}
 
 module.exports = {
-  router: {
-    base: '/duke-compsci290-spring2018/final-project-team-32/'
-  },
   /*
   ** Headers of the page
   */
@@ -31,13 +28,6 @@ module.exports = {
   /*
   ** Build configuration
   */
-  plugins: [
-    { src: '~/plugins/slick-slider', ssr: false }
-  ],
-
-  css: [
-    { src: 'node_modules/slick-carousel/slick/slick.css', lang: 'css' }
-  ],
 
   build: {
     vendor: ['vue-slick'],
