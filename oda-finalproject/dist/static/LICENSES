@@ -1,10 +1,4 @@
 /*!
- * Vue.js v2.5.16
- * (c) 2014-2018 Evan You
- * Released under the MIT License.
- */
-
-/*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
  *
@@ -41,6 +35,12 @@
  * http://jquery.org/license
  *
  * Date: 2016-08-08
+ */
+
+/*!
+ * Vue.js v2.5.16
+ * (c) 2014-2018 Evan You
+ * Released under the MIT License.
  */
 
 /*!

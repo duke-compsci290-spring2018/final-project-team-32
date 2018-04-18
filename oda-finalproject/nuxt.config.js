@@ -8,7 +8,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 
 module.exports = {
   router: {
-    base: '/final-project-team-32/oda-finalproject/dist/'
+    routerBase
   },
   /*
   ** Headers of the page
@@ -33,7 +33,7 @@ module.exports = {
   */
 
   build: {
-    vendor: ['vue-slick'],
+    publicPath: '/static/',
     /*
     ** Run ESLint on save
     */
