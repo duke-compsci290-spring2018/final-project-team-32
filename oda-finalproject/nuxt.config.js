@@ -2,7 +2,7 @@
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/final-project-team-32/oda-finalproject/dist/'
+    base: '/final-project-team-32/oda-finalproject/'
   }
 } : {}
 
@@ -33,7 +33,7 @@ module.exports = {
   */
 
   build: {
-    publicPath: '/dist/',
+    publicPath: '/final-project-team-32/oda-finalproject/',
     /*
     ** Run ESLint on save
     */
