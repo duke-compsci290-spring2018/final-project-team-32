@@ -33,7 +33,7 @@ module.exports = {
   */
 
   build: {
-    publicPath: '/static/',
+    publicPath: '/dist/',
     /*
     ** Run ESLint on save
     */
