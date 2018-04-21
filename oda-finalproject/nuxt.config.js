@@ -1,15 +1,10 @@
-// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-//   router: {
-//     base: '/final-project-team-32/oda-finalproject/'
-//   }
-// } : {}
-module.exports = {
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/final-project-team-32/oda-finalproject/dist/'
-  },
-  plugins: [
-    { src: '~plugins/vue-carousel', ssr: false }
-  ],
+    base: '/final-project-team-32/oda-finalproject/'
+  }
+} : {}
+module.exports = {
+  routerBase,
   /*
   ** Headers of the page
   */
@@ -33,7 +28,6 @@ module.exports = {
   */
   build: {
     publicPath: '/assets/',
-    vendor: ['vue-carousel'],
     /*
     ** Run ESLint on save
     */

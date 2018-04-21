@@ -26,10 +26,8 @@
 </template>
 
 <script>
-import Carousel from '~/components/Carousel'
-import Slide from '~/components/Slide'
-
-// import { Carousel, Slide } from 'vue-carousel';
+import Carousel from '~/components/carousel/Carousel'
+import Slide from '~/components/carousel/Slide'
 
 
 export default {
