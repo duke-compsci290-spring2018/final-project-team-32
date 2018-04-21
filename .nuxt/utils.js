@@ -119,7 +119,7 @@ export async function setContext(app, context) {
       
       payload: context.payload,
       error: context.error,
-      base: '/final-project-team-32/',
+      base: '/final-project-team-32/dist/',
       env: {}
     }
     // Only set once

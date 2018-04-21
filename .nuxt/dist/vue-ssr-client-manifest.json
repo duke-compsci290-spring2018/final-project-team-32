@@ -1,5 +1,5 @@
 {
-  "publicPath": "/final-project-team-32/_nuxt/",
+  "publicPath": "/final-project-team-32/dist/_nuxt/",
   "all": [
     "pages/donate.1daa107c7cbcb1c0f365.js",
     "pages/test.a9e2a6d44c72a01d7f44.js",
@@ -10,16 +10,16 @@
     "pages/faq.8b8befb05e8e0b49aafe.js",
     "pages/index.1f6bb306639780c4e5dc.js",
     "vendor.3b333c498171b499a962.js",
-    "app.8d708e7f746a88ec5870.js",
-    "manifest.d09803a00bf11d7486aa.js",
+    "app.3e2c4a9499673ec15d0e.js",
+    "manifest.1cf5c3bc04d6b0c9289c.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.d09803a00bf11d7486aa.js",
+    "manifest.1cf5c3bc04d6b0c9289c.js",
     "vendor.3b333c498171b499a962.js",
-    "app.8d708e7f746a88ec5870.js"
+    "app.3e2c4a9499673ec15d0e.js"
   ],
   "async": [
     "pages/donate.1daa107c7cbcb1c0f365.js",
