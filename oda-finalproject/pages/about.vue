@@ -1,6 +1,6 @@
 <template>
-<h1>About Test</h1>
-<!-- <div id = "carousel-container">
+<section class="container">
+<div id = "carousel-container">
 <carousel :perPage=4 :navigationEnabled=true>
     <slide>
         Slide 1 Content
@@ -21,12 +21,15 @@
         Slide 6 Content
     </slide>
 </carousel>
-</div> -->
-
+</div>
+</section>
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import Carousel from '~/components/Carousel'
+import Slide from '~/components/Slide'
+
+// import { Carousel, Slide } from 'vue-carousel';
 
 
 export default {

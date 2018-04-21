@@ -7,6 +7,9 @@ module.exports = {
   router: {
     base: '/final-project-team-32/oda-finalproject/dist/'
   },
+  plugins: [
+    { src: '~plugins/vue-carousel', ssr: false }
+  ],
   /*
   ** Headers of the page
   */
@@ -30,6 +33,7 @@ module.exports = {
   */
   build: {
     publicPath: '/assets/',
+    vendor: ['vue-carousel'],
     /*
     ** Run ESLint on save
     */
