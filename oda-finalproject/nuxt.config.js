@@ -7,7 +7,10 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
-  routerBase,
+  // routerBase,
+  router: {
+    base: '/final-project-team-32/oda-finalproject/'
+  },
   /*
   ** Headers of the page
   */
