@@ -2,14 +2,14 @@
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/final-project-team-32/oda-finalproject/dist/'
+    base: '/final-project-team-32/'
   }
 } : {}
 
 module.exports = {
   // routerBase,
   router: {
-    base: '/final-project-team-32/oda-finalproject/'
+    base: '/final-project-team-32/'
   },
   /*
   ** Headers of the page
