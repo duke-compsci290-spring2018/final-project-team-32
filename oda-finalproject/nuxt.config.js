@@ -5,7 +5,7 @@
 // } : {}
 module.exports = {
   router: {
-    base: '/final-project-team-32/oda-finalproject/'
+    base: '/final-project-team-32/oda-finalproject/dist/'
   },
   /*
   ** Headers of the page
