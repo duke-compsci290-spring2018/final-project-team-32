@@ -26,8 +26,10 @@
 </template>
 
 <script>
-import Carousel from '~/components/carousel/Carousel'
-import Slide from '~/components/carousel/Slide'
+if (process.browser) {
+  require('vue-carousel')
+}
+import {Carousel, Slide} from 'vue-carousel'
 
 
 export default {

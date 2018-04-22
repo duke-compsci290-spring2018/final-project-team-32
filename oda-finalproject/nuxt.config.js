@@ -22,7 +22,7 @@ module.exports = {
       { src: 'https://unpkg.com/vue-scrollto' }
     ],
   },
-  plugins: ['~plugins/vue-scrollto.js'],
+  plugins: ['~plugins/vue-scrollto.js', '~plugins/vue-carousel.js'],
   /*
   ** Customize the progress bar color
   */

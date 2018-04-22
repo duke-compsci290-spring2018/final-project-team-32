@@ -3,16 +3,18 @@
     <h1>Home</h1>
     <h2><nuxt-link to="/about">About</nuxt-link></h2>
     <h2><nuxt-link to="/projects">Projects</nuxt-link></h2>
-
   </section>
 </template>
 
 <script>
+if (process.browser) {
+  require('vue-carousel')
+}
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
   }
 }
 </script>
