@@ -1,7 +1,7 @@
 <template>
     <li class="project-list-item">
         <img :src="project.image">
-        <p class="project-name"><a :name="project.linkName">{{project.name}}</a></p>
+        <p class="project-name"><a :id="project.linkName">{{project.name}}</a></p>
         <p>{{project.description}}</p>
     </li>
 </template>

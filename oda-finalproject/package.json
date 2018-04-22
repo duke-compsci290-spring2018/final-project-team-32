@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0",
-    "vue-carousel": "^0.7.2"
+    "vue-carousel": "^0.7.2",
+    "vue-scrollto": "^2.11.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
