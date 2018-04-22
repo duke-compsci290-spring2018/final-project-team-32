@@ -1,9 +1,9 @@
 
 module.exports = {
   
-  router: {
-    base: '/final-project-team-32/oda-finalproject/dist/'
-  },
+  // router: {
+  //   base: '/final-project-team-32/oda-finalproject/dist/'
+  // },
   /*
   ** Headers of the page
   */
@@ -25,6 +25,15 @@ module.exports = {
   /*
   ** Build configuration
   */
+  module: {
+    loaders: [
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      }
+    ]
+  },
+
   build: {
     publicPath: '/assets/',
     /*

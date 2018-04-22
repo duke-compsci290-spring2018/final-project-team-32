@@ -2,6 +2,8 @@
   <section class="container">
     <h1>Home</h1>
     <h2><nuxt-link to="/about">About</nuxt-link></h2>
+    <h2><nuxt-link to="/projects">Projects</nuxt-link></h2>
+
   </section>
 </template>
 
