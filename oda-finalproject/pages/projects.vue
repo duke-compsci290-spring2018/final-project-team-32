@@ -1,5 +1,29 @@
 <template>
+<div id="content-container">
+    <ul class="nav-images">
+        <li class="nav-img">
+            <a href="#project1">
+                <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/5824bccc414fb5cc61dd9ec0/1478802639269/?format=1000w" alt="women looking at map">
+            </a>
+        </li>
+        <li class="nav-img">
+            <a href="#project2">
+                <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/58213f6020099e79d2af7277/1478573931736/?format=1000w" alt="women looking at map">
+            </a>
+        </li>
+        <li class="nav-img">
+            <a href="#project3">
+                <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/5824b7f0ff7c501a0fc9ba13/1478801401883/ODA_Return-101-Circle.png?format=1000w" alt="women looking at map">
+            </a>
+        </li>
+        <li class="nav-img">
+            <a href="#project4">
+                <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/5824c76fe6f2e1eac0b6f47f/1478805367347/Almas-Transfronterizas.png?format=1000w" alt="women looking at map">
+            </a>
+        </li>
+    </ul>
   <project-list :projects="theProjects" title="Our Projects (test using outside data)"></project-list>
+</div>
 </template>
 
 <script>
@@ -18,5 +42,18 @@ export default {
     };
   },
 }
-console.log(theProjects);
 </script>
+
+<style scoped>
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-img img{
+    width: 150px;
+}
+</style>
+
