@@ -20,6 +20,7 @@ module.exports = {
     ],
     script: [
       { src: 'https://unpkg.com/vue-scrollto' }
+
     ],
   },
   plugins: ['~plugins/vue-scrollto.js', { src: '~plugins/vue-carousel', ssr: false }, '~plugins/vuetify.js'],
