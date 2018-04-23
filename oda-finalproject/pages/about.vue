@@ -10,26 +10,7 @@
     <v-tab-item>
         <v-card flat>
             <v-card-text>
-                    <carousel :perPage=4 :navigationEnabled=true>
-                        <slide>
-                            Slide 1 Content
-                        </slide>
-                        <slide>
-                            Slide 2 Content
-                        </slide>
-                            <slide>
-                            Slide 3 Content
-                        </slide>
-                            <slide>
-                            Slide 4 Content
-                        </slide>
-                            <slide>
-                            Slide 5 Content
-                        </slide>
-                            <slide>
-                            Slide 6 Content
-                        </slide>
-                    </carousel>
+                <about-carousel :people="thePeople"></about-carousel>
             </v-card-text>
         </v-card>
     </v-tab-item>
@@ -43,14 +24,17 @@
 </template>
 
 <script>
-
+import thePeople from '~/static/personData.json';
+import AboutCarousel from '~/components/AboutCarousel';
 export default {
+  components: {
+      AboutCarousel
+  },
 
-
-
-  data () {
-      return {
-      }
+  data() {
+    return {
+      thePeople
+    };
   },
 
   methods: {
