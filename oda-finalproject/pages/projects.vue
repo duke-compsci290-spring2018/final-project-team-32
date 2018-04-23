@@ -22,7 +22,7 @@
             </a>
         </li>
     </ul>
-  <project-list :projects="theProjects" title="Our Projects (test using outside data)"></project-list>
+  <project-list :projects="theProjects" title="Our Projects"></project-list>
 </div>
 </template>
 

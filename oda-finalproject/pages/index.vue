@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <img src="http://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57c4caf96a49631abe29f1e4/1523961338145/?format=1500w"/>
     <h1>Home</h1>
     <h2><nuxt-link to="/about">About</nuxt-link></h2>
     <h2><nuxt-link to="/projects">Projects</nuxt-link></h2>
