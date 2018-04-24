@@ -1,7 +1,9 @@
-// test
+
 module.exports = {
+
   // Comment this out when running dev, un-comment when generating and pushing to git 
   router: {
+    // middleware: 'router-auth',
     base: '/final-project-team-32/oda-finalproject/dist/'
   },
   /*
@@ -19,17 +21,22 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'}
     ],
     script: [
-      { src: 'https://unpkg.com/vue-scrollto' }
+      { src: 'https://unpkg.com/vue-scrollto' },
+      { src: "https://www.gstatic.com/firebasejs/4.13.0/firebase.js"}
 
     ],
   },
-  plugins: ['~plugins/vue-scrollto.js', { src: '~plugins/vue-carousel', ssr: false }, '~plugins/vuetify.js'],
+  plugins: ['~plugins/vue-scrollto.js', { src: '~plugins/vue-carousel', ssr: false }, '~plugins/vuetify.js', '~/plugins/fireauth.js'],
   css: ['~assets/app.styl'],
   /*
 
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  vendor: [
+    'firebase',
+    'vuetify'
+  ],
 
 
   /*
@@ -47,7 +54,6 @@ module.exports = {
   build: {
     publicPath: '/assets/',
     extractCSS: true,
-    vendor: ['vuetify'],
     /*
     ** Run ESLint on save
     */

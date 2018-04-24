@@ -6,9 +6,10 @@
       <v-toolbar-title>ODA</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn to="/" flat>Home</v-btn>
         <v-btn to="/about" flat>About</v-btn>
         <v-btn to="/projects" flat>Projects</v-btn>
-        <v-btn flat>Link Three</v-btn>
+        <v-btn to="/account/login">Donate</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-parallax src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57ea1f1315d5db35a6477a6f/1473216312216/?format=1500w">

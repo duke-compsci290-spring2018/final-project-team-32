@@ -1,4 +1,16 @@
 <template>
+ <v-app id="inspire">
+    <v-toolbar>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title>ODA</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn to="/" flat>Home</v-btn>
+        <v-btn to="/about" flat>About</v-btn>
+        <v-btn to="/projects" flat>Projects</v-btn>
+        <v-btn to="/donate">Donate</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
 <div id="content-container">
     <ul class="nav-images">
         <li class="nav-img">
@@ -24,6 +36,7 @@
     </ul>
   <project-list :projects="theProjects" title="Our Projects"></project-list>
 </div>
+</v-app>
 </template>
 
 <script>
