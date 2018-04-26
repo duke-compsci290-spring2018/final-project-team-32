@@ -3,7 +3,6 @@ module.exports = {
 
   // Comment this out when running dev, un-comment when generating and pushing to git 
   router: {
-    // middleware: 'router-auth',
     base: '/final-project-team-32/oda-finalproject/dist/'
   },
   /*
@@ -26,7 +25,7 @@ module.exports = {
 
     ],
   },
-  plugins: ['~plugins/vue-scrollto.js', { src: '~plugins/vue-carousel', ssr: false }, '~plugins/vuetify.js', '~/plugins/fireauth.js'],
+  plugins: ['~plugins/vue-scrollto.js', { src: '~plugins/vue-carousel', ssr: false }, '~plugins/vuetify.js'],
   css: ['~assets/app.styl'],
   /*
 
@@ -37,7 +36,6 @@ module.exports = {
     'firebase',
     'vuetify'
   ],
-
 
   /*
   ** Build configuration

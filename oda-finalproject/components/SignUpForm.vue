@@ -1,35 +1,98 @@
 <template>
   <div class="sign-up">
-      <p>Let's create a new account!</p>
-      <input type="text" v-model="email" placeholder="Email"><br>
-      <input type="password" v-model="password" placeholder="Password"><br>
-      <button v-on:click="signUp">Sign Up</button>
-      <p>or go back to login</p>
+    <v-flex xs4>
+    <p>Let's create a new account!</p>
+    <v-form v-model="valid">
+      <v-text-field
+        label="Name"
+        v-model="name"
+        required
+      ></v-text-field>
+      <v-text-field
+        label="E-mail"
+        v-model="email"
+        :rules="emailRules"
+        required
+      ></v-text-field>
+      <v-text-field
+            name="input-10-1"
+            label="Enter your password"
+            hint="At least 8 characters"
+            v-model="password"
+            min="8"
+            :append-icon="e1 ? 'visibility' : 'visibility_off'"
+            :append-icon-cb="() => (e1 = !e1)"
+            :type="e1 ? 'password' : 'text'"
+            counter
+          ></v-text-field>
+          <v-flex xs6>
+          <v-select
+            :items="roles"
+            v-model="role"
+            label="Select role"
+            class="input-group--focused"
+            item-value="text"
+          ></v-select>
+          </v-flex>
+      <v-btn v-on:click="signUp" color="info">Sign Up</v-btn>
+      <p>Already have an account? <nuxt-link to="/account/login">Login here</nuxt-link></p>
+    </v-form>
+    </v-flex>
   </div>
 </template>
 
 <script>
 import firebase from '~/services/firebaseApp'
+import { mapState } from 'vuex'
 
 export default {
   name:'sign-up',
   data() {
     return {
+      valid: false,
       email: '',
-      password: '' 
+      password: '' ,
+      name: '',
+      e1: false,
+      roles: [
+        {text: 'user'},
+        {text: 'admin'}
+      ],
+      role: '',
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+    ]
     };
   },
   methods: {
     signUp: function() {
+      let self = this
       firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
         function (user) {
+          firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
           alert('Your account has been created !')
+          self.$store.state.role = self.role
+          self.writeUserData(user.uid, self.name, self.email, self.role)
+
         },
         function (err) {
           alert('Oops. ' + err.message)
         }
       );
-    }
+    },
+    writeUserData: function(userId, name, email, userRole) {
+      firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        role: userRole
+        // profile_picture : imageUrl
+    });
+    this.email='',
+    this.password='',
+    this.name='',
+    this.role = ''
+}
 
   }
 }

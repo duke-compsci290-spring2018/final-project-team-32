@@ -34,15 +34,19 @@
             </a>
         </li>
     </ul>
+    <v-flex xs12 sm4 text-xs-center>
+        <p>{{$store.state.role}}</p>
+        <v-btn v-if="$store.state.role ==='admin'" depressed color="primary">Add Project</v-btn>
+    </v-flex>
   <project-list :projects="theProjects" title="Our Projects"></project-list>
 </div>
 </v-app>
 </template>
 
 <script>
-import theProjects from '~/static/data.json';
+import theProjects from '~/static/data.json'
 import ProjectList from '~/components/ProjectList'
-
+import { mapState } from 'vuex'
 
 export default {
   name: 'app',
