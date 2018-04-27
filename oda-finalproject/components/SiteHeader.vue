@@ -7,6 +7,7 @@
         <v-btn to="/" flat>Home</v-btn>
         <v-btn to="/about" flat>About</v-btn>
         <v-btn to="/projects" flat>Projects</v-btn>
+        <v-btn to="/faq" flat>FAQ</v-btn>
         <v-btn to="/donate" color="blue">Donate</v-btn>
         <v-btn v-if="$store.state.role ==='user' || $store.state.role ==='admin'" @click="signOut" >Sign Out</v-btn>
       </v-toolbar-items>
@@ -27,10 +28,10 @@ export default {
     name: 'site-header',
     data() {
         return {
-            
+
         }
     }
-  
+
 }
 </script>
 
@@ -38,4 +39,3 @@ export default {
 <style>
 
 </style>
-
