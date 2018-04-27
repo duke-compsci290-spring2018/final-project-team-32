@@ -1,27 +1,31 @@
 <template>
 <v-app id="inspire">
-    <v-toolbar>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>ODA</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn to="/" flat>Home</v-btn>
-        <v-btn to="/about" flat>About</v-btn>
-        <v-btn to="/projects" flat>Projects</v-btn>
-        <v-btn to="/donate">Donate</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+    <site-header></site-header>
     <sign-up></sign-up>
-    <nuxt-link to="/donate">Test auth link</nuxt-link>
 </v-app>
 </template>
 
 <script>
-import SignUp from '~/components/SignUpForm.vue';
+import SiteHeader from '~/components/SiteHeader'
+import SignUp from '~/components/SignUpForm.vue'
+import firebase from '~/services/firebaseApp'
 
 export default {
     components : {
+        SiteHeader,
         SignUp
+    },
+    methods: {
+        signOut: function() {
+            let self = this
+            firebase.auth().signOut().then(function() {
+                    console.log("signed out")
+                    self.$store.state.role = 'guest'
+                // Sign-out successful.
+            }, function(error) {
+                    // An error happened.
+            });
+        }
     }
   
 }

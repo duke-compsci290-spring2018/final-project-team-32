@@ -1,6 +1,7 @@
 <template>
     <div class="project-list">
-        <h2>{{title}}</h2>
+        <h2 v-if="$store.state.lang === 'eng'">{{title}}</h2>
+        <h2 v-else>Nuestros Proyectos</h2>
         <ul>
             <project-list-item v-for="project in projects" :project="project" :key="project.id">
             </project-list-item>

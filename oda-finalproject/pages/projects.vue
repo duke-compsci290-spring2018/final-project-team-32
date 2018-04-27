@@ -1,42 +1,38 @@
 <template>
  <v-app id="inspire">
-    <v-toolbar>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>ODA</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn to="/" flat>Home</v-btn>
-        <v-btn to="/about" flat>About</v-btn>
-        <v-btn to="/projects" flat>Projects</v-btn>
-        <v-btn to="/account/login">Donate</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
-    <v-flex v-if="$store.state.role ==='admin'" xs4>
-        <h1>Add New Project</h1>
-      <v-text-field
-        label="Project Title"
-        v-model="title"
-        required
-      ></v-text-field>
-    <v-text-field
-        label="Project Description"
-        v-model="description"
-        required
-        multi-line
-        ></v-text-field>
-    <v-text-field
-        label="Image Link"
-        v-model="image"
-        required
-    ></v-text-field>
-    <v-text-field
-        label="Image Description"
-        v-model="image_title"
-        required
-    ></v-text-field>
-    <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
-    </v-flex>
-<div id="content-container">
+     <site-header></site-header>
+    <lang-toggle></lang-toggle>
+        <v-container fluid grid-list-xl>
+              <v-layout row justify-space-between>
+
+                <v-flex v-if="$store.state.role ==='admin'" :align-content-space-around=true xs4>
+                    <h1>Add New Project</h1>
+                <v-text-field
+                    label="Project Title"
+                    v-model="title"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    label="Project Description"
+                    v-model="description"
+                    required
+                    multi-line
+                    ></v-text-field>
+                <v-text-field
+                    label="Image Link"
+                    v-model="image"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    label="Image Description"
+                    v-model="image_title"
+                    required
+                ></v-text-field>
+                <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
+                </v-flex>
+            </v-layout>
+
+<!-- <div id="content-container"> -->
     <ul class="nav-images">
         <li class="nav-img">
             <a href="#" v-scroll-to="'#project1'">
@@ -60,16 +56,17 @@
         </li>
     </ul>
     <v-flex xs12 sm4 text-xs-center>
-        <p>{{$store.state.role}}</p>
         <v-btn v-if="$store.state.role ==='admin'" depressed color="primary">Add Project</v-btn>
     </v-flex>
   <project-list :projects="projectsTest" title="Our Projects"></project-list>
-</div>
+</v-container>
 </v-app>
 </template>
 
 <script>
+import SiteHeader from '~/components/SiteHeader'
 import ProjectList from '~/components/ProjectList'
+import LangToggle from '~/components/LangToggle'
 import { mapState } from 'vuex'
 import firebase from '~/services/firebaseApp'
 import { projectsRef } from '~/services/firebaseApp'
@@ -85,14 +82,16 @@ export default {
     })
   },
   components: {
-      ProjectList
+      SiteHeader,
+      ProjectList,
+      LangToggle
   },
   data() {
     return {
       title: '',
       description: '',
       image: '',
-      image_title: ''
+      image_title: '',
     };
   },
   methods : {
@@ -111,6 +110,16 @@ export default {
         this.image='',
         this.image_title=''
       },
+    signOut: function() {
+        let self = this
+        firebase.auth().signOut().then(function() {
+            self.$store.state.role= 'guest'
+            console.log("signed out")
+        // Sign-out successful.
+        }, function(error) {
+            // An error happened.
+        });
+    },
   }
 }
 </script>
@@ -126,5 +135,9 @@ ul{
 .nav-img img{
     width: 150px;
 }
+#content-container{
+    margin: 2%;
+}
+
 </style>
 

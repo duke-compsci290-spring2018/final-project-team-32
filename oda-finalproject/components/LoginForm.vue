@@ -23,14 +23,11 @@
       <p>Don't have an account? You can <nuxt-link to="/account/signup">create one here</nuxt-link></p>
     </v-form>
     </v-flex>
-      <p v-if="loggedin">Show after logged in!</p>
-      <button @click="signOut">test sign out</button>
   </div>
 </template>
 
 <script>
 import firebase from '~/services/firebaseApp'
-// import currentRole from '~/services/firebaseAuth'
 import { mapState } from 'vuex'
 
 export default {
@@ -40,7 +37,6 @@ export default {
       valid: false,
       email: '',
       password: '',
-      loggedin: false,
       formError: null,
       emailRules: [
       v => !!v || 'E-mail is required',
@@ -59,7 +55,6 @@ export default {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
         function(user) {
           firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
-          self.loggedin= true;
           var userId = firebase.auth().currentUser.uid;
             firebase.database().ref('users/'+ userId).child('role').once('value').then(function(snapshot){
             self.$store.state.role = snapshot.val();
@@ -84,14 +79,6 @@ export default {
       //   this.formError = e.message
       // }
     },
-    signOut: function() {
-      firebase.auth().signOut().then(function() {
-        console.log("signed out")
-      // Sign-out successful.
-      }, function(error) {
-        // An error happened.
-      });
-    }
 
   }
 }

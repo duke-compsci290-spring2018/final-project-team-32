@@ -1,16 +1,7 @@
 <template>
 <v-app id="inspire">
-    <v-toolbar>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>ODA</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn to="/" flat>Home</v-btn>
-        <v-btn to="/about" flat>About</v-btn>
-        <v-btn to="/projects" flat>Projects</v-btn>
-        <v-btn to="/donate">Donate</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+    <site-header></site-header>
+    <lang-toggle></lang-toggle>
     <v-tabs fixed-tabs>
         <v-tab ripple>
             About
@@ -35,10 +26,16 @@
 </template>
 
 <script>
-import thePeople from '~/static/personData.json';
-import AboutCarousel from '~/components/AboutCarousel';
+import SiteHeader from '~/components/SiteHeader'
+import LangToggle from '~/components/LangToggle'
+import thePeople from '~/static/personData.json'
+import AboutCarousel from '~/components/AboutCarousel'
+import { mapState } from 'vuex'
+
 export default {
   components: {
+      SiteHeader,
+      LangToggle,
       AboutCarousel
   },
 
@@ -49,7 +46,16 @@ export default {
   },
 
   methods: {
-
+    signOut: function() {
+        let self = this
+        firebase.auth().signOut().then(function() {
+            self.$store.state.role= 'guest'
+            console.log("signed out")
+        // Sign-out successful.
+        }, function(error) {
+            // An error happened.
+        });
+    }
   }
 }
 </script>

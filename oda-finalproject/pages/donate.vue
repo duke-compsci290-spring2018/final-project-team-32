@@ -1,31 +1,29 @@
 <template>
 <v-app id="inspire">
-    <v-toolbar>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>ODA</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn to="/" flat>Home</v-btn>
-        <v-btn to="/about" flat>About</v-btn>
-        <v-btn to="/projects" flat>Projects</v-btn>
-        <v-btn to="/donate">Donate</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
-    <div id="content-container">
-    <v-flex v-if="$store.state.role ==='user'" xs12 :align-content-center="true" :align-center="true">
+    <site-header></site-header>
+    <lang-toggle></lang-toggle>
+    <v-container fluid grid-list-xl>
+    <v-layout row>
+    <v-flex v-if="$store.state.role ==='user' || $store.state.role ==='admin'" xs12 :align-content-center="true" :align-center="true">
         <h1>Donate</h1>
         <p>{{lorem}}</p>
     </v-flex>
     <v-flex v-if="$store.state.role ==='guest'" xs12>
         <login-form></login-form>
     </v-flex>
-    </div>
+    </v-layout>
+    </v-container>
 </v-app>
 </template>
 
 
 <script>
+import SiteHeader from '~/components/SiteHeader'
+import LangToggle from '~/components/LangToggle'
 import LoginForm from '~/components/LoginForm.vue'
+import firebase from '~/services/firebaseApp'
+import { mapState } from 'vuex'
+
 
 export default {
   data () {
@@ -34,7 +32,21 @@ export default {
       }
     },
     components: {
+        SiteHeader,
+        LangToggle,
         LoginForm
+    },
+    methods: {
+    signOut: function() {
+        let self = this
+        firebase.auth().signOut().then(function() {
+            self.$store.state.role= 'guest'
+            console.log("signed out")
+        // Sign-out successful.
+        }, function(error) {
+            // An error happened.
+        });
+    }
     }
 }
 </script>

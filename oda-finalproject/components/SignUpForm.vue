@@ -35,7 +35,7 @@
           ></v-select>
           </v-flex>
       <v-btn v-on:click="signUp" color="info">Sign Up</v-btn>
-      <p>Already have an account? <nuxt-link to="/account/login">Login here</nuxt-link></p>
+      <p>Already have an account? <nuxt-link to="/donate">Login here</nuxt-link></p>
     </v-form>
     </v-flex>
   </div>
