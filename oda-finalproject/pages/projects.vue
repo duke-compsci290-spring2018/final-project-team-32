@@ -8,9 +8,34 @@
         <v-btn to="/" flat>Home</v-btn>
         <v-btn to="/about" flat>About</v-btn>
         <v-btn to="/projects" flat>Projects</v-btn>
-        <v-btn to="/donate">Donate</v-btn>
+        <v-btn to="/account/login">Donate</v-btn>
       </v-toolbar-items>
     </v-toolbar>
+    <v-flex v-if="$store.state.role ==='admin'" xs4>
+        <h1>Add New Project</h1>
+      <v-text-field
+        label="Project Title"
+        v-model="title"
+        required
+      ></v-text-field>
+    <v-text-field
+        label="Project Description"
+        v-model="description"
+        required
+        multi-line
+        ></v-text-field>
+    <v-text-field
+        label="Image Link"
+        v-model="image"
+        required
+    ></v-text-field>
+    <v-text-field
+        label="Image Description"
+        v-model="image_title"
+        required
+    ></v-text-field>
+    <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
+    </v-flex>
 <div id="content-container">
     <ul class="nav-images">
         <li class="nav-img">
@@ -38,26 +63,55 @@
         <p>{{$store.state.role}}</p>
         <v-btn v-if="$store.state.role ==='admin'" depressed color="primary">Add Project</v-btn>
     </v-flex>
-  <project-list :projects="theProjects" title="Our Projects"></project-list>
+  <project-list :projects="projectsTest" title="Our Projects"></project-list>
 </div>
 </v-app>
 </template>
 
 <script>
-import theProjects from '~/static/data.json'
 import ProjectList from '~/components/ProjectList'
 import { mapState } from 'vuex'
+import firebase from '~/services/firebaseApp'
+import { projectsRef } from '~/services/firebaseApp'
+import axios from 'axios'
 
+// let pRef = firebase.database().ref('projects')
 export default {
-  name: 'app',
+  name: 'projects',
+  asyncData () {
+    return axios.get('https://oda-finalproject.firebaseio.com/projects.json')
+    .then((res) => {
+      return { projectsTest: res.data }
+    })
+  },
   components: {
       ProjectList
   },
   data() {
     return {
-      theProjects
+      title: '',
+      description: '',
+      image: '',
+      image_title: ''
     };
   },
+  methods : {
+      addProject: function() {
+        let self = this
+        var myRef = firebase.database().ref().child('projects').push().key
+        firebase.database().ref('projects/' + myRef).set({
+            name: self.title,
+            description: self.description,
+            image_title: self.image,
+            image: self.image,
+            linkName: myRef
+        })
+        this.title='',
+        this.description='',
+        this.image='',
+        this.image_title=''
+      },
+  }
 }
 </script>
 

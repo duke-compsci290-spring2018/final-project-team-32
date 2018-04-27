@@ -32,10 +32,7 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  vendor: [
-    'firebase',
-    'vuetify'
-  ],
+
 
   /*
   ** Build configuration
@@ -50,6 +47,11 @@ module.exports = {
   },
 
   build: {
+    vendor: [
+      'firebase',
+      'vuetify',
+      'axios'
+    ],
     publicPath: '/assets/',
     extractCSS: true,
     /*

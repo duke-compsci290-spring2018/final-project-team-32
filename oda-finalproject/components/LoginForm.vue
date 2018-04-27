@@ -13,9 +13,12 @@
             name="input-10-1"
             hint="At least 8 characters"
             v-model="password"
+            label="Password"
             min="8"
+            required
             counter
           ></v-text-field>
+
       <v-btn v-on:click="handler" color="info">Log In</v-btn>
       <p>Don't have an account? You can <nuxt-link to="/account/signup">create one here</nuxt-link></p>
     </v-form>
