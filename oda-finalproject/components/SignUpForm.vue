@@ -1,8 +1,9 @@
 <template>
   <div class="sign-up">
     <v-flex xs4>
-    <p>Let's create a new account!</p>
-    <v-form v-model="valid">
+    <p v-if="$store.state.lang==='eng'">Let's create a new account!</p>
+    <p v-else>Vamos a crear una cuenta</p>
+    <v-form v-if="$store.state.lang==='eng'" v-model="valid">
       <v-text-field
         label="Name"
         v-model="name"
@@ -36,6 +37,41 @@
           </v-flex>
       <v-btn v-on:click="signUp" color="info">Sign Up</v-btn>
       <p>Already have an account? <nuxt-link to="/donate">Login here</nuxt-link></p>
+    </v-form>
+    <v-form v-else v-model="valid">
+      <v-text-field
+        label="Nombre"
+        v-model="name"
+        required
+      ></v-text-field>
+      <v-text-field
+        label="E-mail"
+        v-model="email"
+        :rules="emailRules"
+        required
+      ></v-text-field>
+      <v-text-field
+            name="input-10-1"
+            label="Contraseña"
+            hint="Al menos 8 carácteres"
+            v-model="password"
+            min="8"
+            :append-icon="e1 ? 'visibility' : 'visibility_off'"
+            :append-icon-cb="() => (e1 = !e1)"
+            :type="e1 ? 'password' : 'text'"
+            counter
+          ></v-text-field>
+          <v-flex xs6>
+          <v-select
+            :items="roles"
+            v-model="role"
+            label="Selecciona papel"
+            class="input-group--focused"
+            item-value="text"
+          ></v-select>
+          </v-flex>
+      <v-btn v-on:click="signUp" color="info">Inscribirse</v-btn>
+      <p>¿Ya tiene una cuenta? <nuxt-link to="/donate">iniciar sesión acá</nuxt-link></p>
     </v-form>
     </v-flex>
   </div>

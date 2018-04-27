@@ -2,9 +2,9 @@
  <v-app id="inspire">
      <site-header></site-header>
     <lang-toggle></lang-toggle>
+    <v-content>
         <v-container fluid grid-list-xl>
-              <v-layout row justify-space-between>
-
+              <v-layout row justify-space-around>
                 <v-flex v-if="$store.state.role ==='admin'" :align-content-space-around=true xs4>
                     <h1>Add New Project</h1>
                 <v-text-field
@@ -31,35 +31,34 @@
                 <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
                 </v-flex>
             </v-layout>
-
+    <v-layout row justify-space-around>
 <!-- <div id="content-container"> -->
     <ul class="nav-images">
-        <li class="nav-img">
-            <a href="#" v-scroll-to="'#project1'">
+        <v-flex xs4 class="nav-img">
+            <a href="#" v-scroll-to="'#-LB74ZplvyrrpuZWG0j6'">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/5824bccc414fb5cc61dd9ec0/1478802639269/?format=1000w" alt="women looking at map">
             </a>
-        </li>
-        <li class="nav-img">
-            <a href="#" v-scroll-to="'#project2'">
+        </v-flex>
+        <v-flex xs4 class="nav-img">
+            <a href="#" v-scroll-to="'#-LB74o9dJC3dpk1TW7lp'">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/58213f6020099e79d2af7277/1478573931736/?format=1000w" alt="women looking at map">
             </a>
-        </li>
-        <li class="nav-img">
-            <a href="#" v-scroll-to="'#project3'">
+        </v-flex>
+        <v-flex xs4 class="nav-img">
+            <a href="#" v-scroll-to="'#-LB74vjFL1tl0GDKMprJ'">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/5824b7f0ff7c501a0fc9ba13/1478801401883/ODA_Return-101-Circle.png?format=1000w" alt="women looking at map">
             </a>
-        </li>
-        <li class="nav-img">
-            <a href="#" v-scroll-to="'#project4'">
+        </v-flex>
+        <v-flex xs4 class="nav-img">
+            <a href="#" v-scroll-to="'#-LB751f5yvYSUPahtRKF'">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/5824c76fe6f2e1eac0b6f47f/1478805367347/Almas-Transfronterizas.png?format=1000w" alt="women looking at map">
             </a>
-        </li>
+        </v-flex>
     </ul>
-    <v-flex xs12 sm4 text-xs-center>
-        <v-btn v-if="$store.state.role ==='admin'" depressed color="primary">Add Project</v-btn>
-    </v-flex>
+    </v-layout>
   <project-list :projects="projectsTest" title="Our Projects"></project-list>
 </v-container>
+</v-content>
 </v-app>
 </template>
 

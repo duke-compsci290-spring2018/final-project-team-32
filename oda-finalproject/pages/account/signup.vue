@@ -1,7 +1,12 @@
 <template>
 <v-app id="inspire">
     <site-header></site-header>
-    <sign-up></sign-up>
+    <lang-toggle></lang-toggle>
+    <v-content>
+        <v-container fluid>
+            <sign-up></sign-up>
+        </v-container>
+    </v-content>
 </v-app>
 </template>
 
@@ -9,10 +14,12 @@
 import SiteHeader from '~/components/SiteHeader'
 import SignUp from '~/components/SignUpForm.vue'
 import firebase from '~/services/firebaseApp'
+import LangToggle from '~/components/LangToggle'
 
 export default {
     components : {
         SiteHeader,
+        LangToggle,
         SignUp
     },
     methods: {

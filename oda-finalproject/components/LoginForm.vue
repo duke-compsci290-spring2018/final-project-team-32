@@ -1,8 +1,8 @@
 <template>
-  <div class="login">
-    <h3>Log In</h3>
+  <v-container fluid class="login">
     <v-flex xs4>
-    <v-form v-model="valid">
+    <v-form v-if="$store.state.lang ==='eng'" v-model="valid">
+      <h3>Log In</h3>
       <v-text-field
         label="E-mail"
         v-model="email"
@@ -17,13 +17,32 @@
             min="8"
             required
             counter
-          ></v-text-field>
-
+        ></v-text-field>
       <v-btn v-on:click="handler" color="info">Log In</v-btn>
       <p>Don't have an account? You can <nuxt-link to="/account/signup">create one here</nuxt-link></p>
     </v-form>
+    <v-form v-else v-model="valid">
+      <h3>Iniciar Sesión</h3>
+      <v-text-field
+        label="E-mail"
+        v-model="email"
+        :rules="emailRules"
+        required
+      ></v-text-field>
+      <v-text-field
+            name="input-10-1"
+            hint="Al menos 8 carácteres"
+            v-model="password"
+            label="Contraseña"
+            min="8"
+            required
+            counter
+        ></v-text-field>
+      <v-btn v-on:click="handler" color="info">Iniciar Sesión</v-btn>
+      <p>¿No tiene una cuenta? La puede <nuxt-link to="/account/signup">crear acá</nuxt-link></p>
+    </v-form>
     </v-flex>
-  </div>
+  </v-container>
 </template>
 
 <script>

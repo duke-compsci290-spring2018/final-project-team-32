@@ -1,6 +1,6 @@
 <template>
     <v-toolbar>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
       <v-toolbar-title>ODA</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="$store.state.lang ==='eng'" class="hidden-sm-and-down">
@@ -15,7 +15,7 @@
         <v-btn to="/about" flat>Nosotros</v-btn>
         <v-btn to="/projects" flat>Proyectos</v-btn>
         <v-btn to="/donate" color="blue">Donar</v-btn>
-        <v-btn v-if="$store.state.role ==='user' || $store.state.role ==='admin'" @click="signOut" >Salir</v-btn>
+        <v-btn v-if="$store.state.role ==='user' || $store.state.role ==='admin'" @click="signOut" >Desinscribirse</v-btn>
       </v-toolbar-items>
     </v-toolbar>
 </template>

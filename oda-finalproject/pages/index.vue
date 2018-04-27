@@ -5,7 +5,8 @@
     <lang-toggle></lang-toggle>
     <v-parallax src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57ea1f1315d5db35a6477a6f/1473216312216/?format=1500w">
       <v-layout column align-center justify-center>
-        <h1>Welcome</h1>
+        <h1 v-if="$store.state.lang==='eng'">Welcome</h1>
+        <h1 v-else>Bienvenido</h1>
       </v-layout>
     </v-parallax>
     <v-parallax src="http://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57c4caf96a49631abe29f1e4/1523961338145/?format=1500w">

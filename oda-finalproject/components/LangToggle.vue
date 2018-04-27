@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-btn-toggle v-model="selected" id="lang-toggle">
+        <v-btn-toggle v-model="$store.state.lang" id="lang-toggle">
             <v-btn @click="$store.state.lang = 'eng'" flat value="eng">
                   English
                 </v-btn>
@@ -18,7 +18,7 @@ export default {
     name: 'lang-toggle',
     data() {
         return {
-            selected: 'eng'
+            // selected: currentLang
         }
     }
   
