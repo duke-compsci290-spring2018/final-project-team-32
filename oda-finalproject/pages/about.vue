@@ -324,18 +324,9 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
-  a:link {
-      color: white;
-  }
 
-  /* visited link */
   a:visited {
-      color: white;
-  }
-
-  /* mouse over link */
-  a:hover {
-      color: red;
+    color: black;
   }
 
   h2 {
