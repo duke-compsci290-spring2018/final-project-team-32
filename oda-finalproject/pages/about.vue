@@ -4,7 +4,7 @@
     <lang-toggle></lang-toggle>
     <v-layout v-if="$store.state.lang==='eng'">
     <v-tabs fixed-tabs>
-        <v-tab  ripple>
+        <v-tab ripple>
             About
         </v-tab>
         <v-tab ripple>
@@ -19,7 +19,8 @@
                   </p>
               </v-card-text>
               <v-card-text>
-                  Otros Dreams en Acción is significant in three important ways. First, ODA advocates for the claim to legal rights and responsibilities—including but not limited to legal international mobility—as members of the United States national community from our current location, al otro lado, in towns and cities across Mexico. Second, ODA advocates for integration and transformation in Mexico. And last but not least, the members of ODA support each other, independent of what someone may have done in the past, the circumstances under which someone returned to Mexico, and the diversity of immigration status and mobility within our community.
+                  <p>Otros Dreams en Acción is significant in three important ways. First, ODA advocates for the claim to legal rights and responsibilities—including but not limited to legal international mobility—as members of the United States national community from our current location, al otro lado, in towns and cities across Mexico. Second, ODA advocates for integration and transformation in Mexico. And last but not least, the members of ODA support each other, independent of what someone may have done in the past, the circumstances under which someone returned to Mexico, and the diversity of immigration status and mobility within our community.
+                  </p>
               </v-card-text>
         </v-card>
         <v-card>
@@ -36,7 +37,7 @@
             We are not a typical non-profit organization. We are a members-based, grassroots organization funded through the heartfelt work and dedication of our members, direct donations, and project-based grants. We make decisions through consensus and distribute resources according to dynamic priorities and circumstances.
           </v-card-text>
         </v-card>
-        <v-card flat>
+        <v-card>
             <v-card-title> <h1> Our Leadership Team </h1></v-card-title>
             <v-card-text> The idea of Otros Dreams en Acción was created just before sunset on October 28, 2015 over a meal in Newport Beach, California. Without knowing exactly what would come next, but with the determination to keep the embers glowing from all that had come before, Maggie Loredo and Jill Anderson committed to build ODA. They met each other and a growing network of bilingual and bicultural youth in Mexico via the book Los Otros Dreamers.  Donations from the book funded the founding of ODA and the creation of this website.
             </v-card-text>
@@ -51,20 +52,31 @@
     </v-tab-item>
     <v-tab-item>
         <v-card flat>
+          <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
           <v-card-text>
             <div class="row">
               <div class="column" id="sixteen">
                 <h2>2016</h2>
+                <br>
                   <ul>
-                    <li>media</li>
-                    <li>media</li>
+                    <li>"<a href="http://www.boulderweekly.com/news/the-other-dreamers/" target="_blank">The Other Dreamers</a>" - <b><i>Boulder Weekly</i></b>, Angela K. Evans September 22, 2016</li>
+                    <li>"<a href="http://www.latimes.com/world/mexico-americas/la-fg-mexico-return-migration-schools-20160913-snap-story.html" target="_blank">Nearly half a million U.S. citizens are
+                      enrolled in Mexican schools. Many of them are struggling</a>"
+                      - <b><i>Los Angeles Times</i></b>, Kate Linthicum, September 14, 2016</li>
+                    <li>"<a href="http://www.pressdemocrat.com/news/5460734-181/speakers-at-sonoma-state-university?ref=TSM" target="_blank">Speakers at Sonoma State University, Roseland library tell of immigration difficulties</a>"
+                      - <b><i>The Press Democrat</i></b>, Eloísa Ruano González, April 4, 2016</li>
+                    <li>"<a href="https://www.pbs.org/newshour/show/young-deportees-start-over-in-mexico-after-growing-up-in-the-u-s" target="_blank">Young returnees start over in Mexico after growing up in the U.S.</a>"
+                      - <b><i>PBS NEWSHOUR</i></b>, Fred de Sam Lazero and the Under-Told Stories Project, January 6, 2016</li>
                   </ul>
               </div>
               <div class="column" id="fifteen">
                 <h2>2015</h2>
+                <br>
                   <ul>
-                    <li>media</li>
-                    <li>media</li>
+                    <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-after-88-months-in-mexico-as-a-dreamer-i-can-finally-return-home" target="_blank">Guest Voz: After 88 months in Mexico as a DREAMer, I can finally return home.</a>"
+                      - <b><i>Latina Lista</i></b>, Magdalena Loredo, Oct 20, 2015</li>
+                    <li>"<a href="http://www.caller.com/news/immigration/mexican-immigrants-once-in-us-face-ongoing-struggle-2043568d-b53d-4758-e053-0100007f4ba5-331767761.html" target="_blank">Mexican immigrants, once in U.S., face ongoing struggle</a>"
+                      - <b><i>Corpus Christi Caller-Times</i></b>, Nadia Tamez-Robledo, Oct 10, 2015</li>
                     <li>media</li>
                     <li>media</li>
                     <li>media</li>
@@ -73,6 +85,7 @@
               </div>
               <div class="column" id="fourteen">
                 <h2>2014</h2>
+                <br>
                   <ul>
                     <li>media</li>
                     <li>media</li>
@@ -80,6 +93,7 @@
               </div>
               <div class="column" id="thirteen">
                 <h2>2013</h2>
+                <br>
                   <ul>
                     <li>media</li>
                     <li>media</li>
@@ -138,6 +152,7 @@
     </v-tab-item>
     <v-tab-item>
         <v-card flat>
+          <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
           <v-card-text>
             <div class="row">
               <div class="column" id="sixteen">
