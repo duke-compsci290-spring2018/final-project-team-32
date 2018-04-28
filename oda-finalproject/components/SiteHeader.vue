@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import firebase from '~/services/firebaseApp'
 import { mapState } from 'vuex'
 
 export default {
@@ -31,6 +32,18 @@ export default {
         return {
 
         }
+    },
+    methods: {
+      signOut: function() {
+        let self = this
+        firebase.auth().signOut().then(function() {
+            self.$store.state.role= 'guest'
+            alert('You are now signed out!')
+        // Sign-out successful.
+        }, function(error) {
+            // An error happened.
+        });
+    },
     }
 
 }

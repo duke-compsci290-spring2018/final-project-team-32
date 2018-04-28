@@ -1,37 +1,10 @@
 <template>
  <v-app id="inspire">
-     <site-header></site-header>
+    <site-header></site-header>
     <lang-toggle></lang-toggle>
     <v-content>
         <v-container fluid grid-list-xl>
-              <v-layout row justify-space-around>
-                <v-flex v-if="$store.state.role ==='admin'" :align-content-space-around=true xs4>
-                    <h1>Add New Project</h1>
-                <v-text-field
-                    label="Project Title"
-                    v-model="title"
-                    required
-                ></v-text-field>
-                <v-text-field
-                    label="Project Description"
-                    v-model="description"
-                    required
-                    multi-line
-                    ></v-text-field>
-                <v-text-field
-                    label="Image Link"
-                    v-model="image"
-                    required
-                ></v-text-field>
-                <v-text-field
-                    label="Image Description"
-                    v-model="image_title"
-                    required
-                ></v-text-field>
-                <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
-                </v-flex>
-            </v-layout>
-    <v-layout row justify-space-around>
+    <v-layout justify-space-around>
 <!-- <div id="content-container"> -->
     <ul class="nav-images">
         <v-flex xs4 class="nav-img">
@@ -57,6 +30,33 @@
     </ul>
     </v-layout>
   <project-list :projects="projectsTest" title="Our Projects"></project-list>
+              <v-layout v-if="$store.state.role ==='admin'" justify-space-around>
+                <v-form>
+                 <h1>Add New Project</h1>
+                <v-text-field
+                    label="Project Title"
+                    v-model="title"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    label="Project Description"
+                    v-model="description"
+                    required
+                    multi-line
+                    ></v-text-field>
+                <v-text-field
+                    label="Image Link"
+                    v-model="image"
+                    required
+                ></v-text-field>
+                <v-text-field
+                    label="Image Description"
+                    v-model="image_title"
+                    required
+                ></v-text-field>
+                <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
+                </v-form>
+            </v-layout>
 </v-container>
 </v-content>
 </v-app>
@@ -109,16 +109,7 @@ export default {
         this.image='',
         this.image_title=''
       },
-    signOut: function() {
-        let self = this
-        firebase.auth().signOut().then(function() {
-            self.$store.state.role= 'guest'
-            console.log("signed out")
-        // Sign-out successful.
-        }, function(error) {
-            // An error happened.
-        });
-    },
+
   }
 }
 </script>
