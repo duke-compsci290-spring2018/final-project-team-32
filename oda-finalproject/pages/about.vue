@@ -54,70 +54,88 @@
         <v-card flat>
           <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
           <v-card-text>
-            <div class="row">
-              <div class="column" id="sixteen">
-                <h2>2016</h2>
-                <br>
-                  <ul>
-                    <li>"<a href="http://www.boulderweekly.com/news/the-other-dreamers/" target="_blank">The Other Dreamers</a>" -- <b><i>Boulder Weekly</i></b>, Angela K. Evans September 22, 2016</li>
+                    <v-container fluid grid-list-xl>
+          <v-layout row wrap justify-space-around>
+            <v-flex xs3 >
+                <v-card dark color="primary" class="flex-pad">
+                    <v-card-text>
+              <h2>2016</h2>
+              <br>
+                <ul>
+                  <li>"<a href="http://www.boulderweekly.com/news/the-other-dreamers/" target="_blank">The Other Dreamers</a>" -- <b><i>Boulder Weekly</i></b>, Angela K. Evans September 22, 2016</li>
+                  <br>
+                  <li>"<a href="http://www.latimes.com/world/mexico-americas/la-fg-mexico-return-migration-schools-20160913-snap-story.html" target="_blank">Nearly half a million U.S. citizens are
+                    enrolled in Mexican schools. Many of them are struggling</a>"
+                    -- <b><i>Los Angeles Times</i></b>, Kate Linthicum, September 14, 2016</li>
+                  <br>
+                  <li>"<a href="http://www.pressdemocrat.com/news/5460734-181/speakers-at-sonoma-state-university?ref=TSM" target="_blank">Speakers at Sonoma State University, Roseland library tell of immigration difficulties</a>"
+                    -- <b><i>The Press Democrat</i></b>, Eloísa Ruano González, April 4, 2016</li>
+                  <br>
+                  <li>"<a href="https://www.pbs.org/newshour/show/young-deportees-start-over-in-mexico-after-growing-up-in-the-u-s" target="_blank">Young returnees start over in Mexico after growing up in the U.S.</a>"
+                    -- <b><i>PBS NEWSHOUR</i></b>, Fred de Sam Lazero and the Under-Told Stories Project, January 6, 2016</li>
+                </ul>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs3 >
+                <v-card dark color="primary">
+                    <v-card-text class="flex-pad">
+                    <h2>2015</h2>
                     <br>
-                    <li>"<a href="http://www.latimes.com/world/mexico-americas/la-fg-mexico-return-migration-schools-20160913-snap-story.html" target="_blank">Nearly half a million U.S. citizens are
-                      enrolled in Mexican schools. Many of them are struggling</a>"
-                      -- <b><i>Los Angeles Times</i></b>, Kate Linthicum, September 14, 2016</li>
-                    <br>
-                    <li>"<a href="http://www.pressdemocrat.com/news/5460734-181/speakers-at-sonoma-state-university?ref=TSM" target="_blank">Speakers at Sonoma State University, Roseland library tell of immigration difficulties</a>"
-                      -- <b><i>The Press Democrat</i></b>, Eloísa Ruano González, April 4, 2016</li>
-                    <br>
-                    <li>"<a href="https://www.pbs.org/newshour/show/young-deportees-start-over-in-mexico-after-growing-up-in-the-u-s" target="_blank">Young returnees start over in Mexico after growing up in the U.S.</a>"
-                      -- <b><i>PBS NEWSHOUR</i></b>, Fred de Sam Lazero and the Under-Told Stories Project, January 6, 2016</li>
-                  </ul>
-              </div>
-              <div class="column" id="fifteen">
-                <h2>2015</h2>
-                <br>
-                  <ul>
-                    <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-after-88-months-in-mexico-as-a-dreamer-i-can-finally-return-home" target="_blank">Guest Voz: After 88 months in Mexico as a DREAMer, I can finally return home.</a>"
-                      -- <b><i>Latina Lista</i></b>, Magdalena Loredo, Oct 20, 2015</li>
-                    <br>
-                    <li>"<a href="http://www.caller.com/news/immigration/mexican-immigrants-once-in-us-face-ongoing-struggle-2043568d-b53d-4758-e053-0100007f4ba5-331767761.html" target="_blank">Mexican immigrants, once in U.S., face ongoing struggle</a>"
-                      -- <b><i>Corpus Christi Caller-Times</i></b>, Nadia Tamez-Robledo, Oct 10, 2015</li>
-                    <br>
-                    <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-how-do-i-go-on-dreaming-when-mexican-govt-says-my-u-s-college-education-is-worthless" target="_blank">Guest Voz: How do I go on DREAMing when Mexican gov’t says my U.S. college education is worthless</a>"
-                      -- <b><i>Latina Lista</i></b>, Nancy Landa, May 18, 2015</li>
-                    <br>
-                    <li>"<a href="https://www.theguardian.com/global/2015/may/17/deported-to-mexico-immigration-america" target="_blank">Deported to Mexico: a lost generation</a>"
-                      -- <b><i>The Guardian</i></b>, Nina Lakhani, May 17, 2015</li>
-                    <br>
-                  </ul>
-              </div>
-              <div class="column" id="fourteen">
-                <h2>2014</h2>
-                <br>
-                  <ul>
-                    <li>"<a href="http://www.latimes.com/world/la-fg-c1-mexico-dreamers-20141104-story.html" target="_blank">U.S.-raised Dreamers are building new lives — back in Mexico</a>"
-                      -- <b><i>Los Angeles Times</i></b>, Kate Linthicum, Nov 4, 2014</li>
-                    <br>
-                    <li>"<a href="https://www.nytimes.com/2014/07/23/opinion/two-countries-no-home.html?_r=0" target="_blank">Two Countries, No Home</a>"
-                      -- <b><i>New York Times</i></b>, Op-Docs, Verity Oswin and Leslie Atkins, July 22, 2014</li>
-                    <br>
-                    <li>"<a href="http://kuow.org/post/immigrant-leaves-america-chase-his-dreams-mexico" target="_blank">An Immigrant Leaves America To Chase His Dreams In Mexico</a>"
-                      -- <b><i>KUOW NPR</i></b>, Liz Jones, July 23, 2014</li>
-                    <br><br><br><br><br><br><br><br><br>
-                  </ul>
-              </div>
-              <div class="column" id="thirteen">
-                <h2>2013</h2>
-                <br>
-                  <ul>
-                    <li>"<a href="https://www.dallasnews.com/news/news/2013/10/27/from-mansfield-to-mexico-man-of-two-countries-is-at-home-in-neither" target="_blank">From Mansfield to Mexico: Man of two countries is at home in neither</a>"
-                      -- <b><i>The Dallas Morning News</i></b>, Dianne Solís and Alfredo Corchado, Oct 27, 2013</li>
-                    <br>
-                    <li>"<a href="http://latinousa.org/2013/10/25/los-otros-dreamers/" target="_blank">Los Otros Dreamers</a>"
-                      -- <b><i>Latino USA</i></b>, Maria Hinojosa and Brooke Binkowski, Oct 25, 2013</li>
-                    <br><br><br><br><br><br><br><br><br><br><br><br>
-                  </ul>
-              </div>
-            </div>
+                        <ul>
+                        <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-after-88-months-in-mexico-as-a-dreamer-i-can-finally-return-home" target="_blank">Guest Voz: After 88 months in Mexico as a DREAMer, I can finally return home.</a>"
+                            -- <b><i>Latina Lista</i></b>, Magdalena Loredo, Oct 20, 2015</li>
+                        <br>
+                        <li>"<a href="http://www.caller.com/news/immigration/mexican-immigrants-once-in-us-face-ongoing-struggle-2043568d-b53d-4758-e053-0100007f4ba5-331767761.html" target="_blank">Mexican immigrants, once in U.S., face ongoing struggle</a>"
+                            -- <b><i>Corpus Christi Caller-Times</i></b>, Nadia Tamez-Robledo, Oct 10, 2015</li>
+                        <br>
+                        <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-how-do-i-go-on-dreaming-when-mexican-govt-says-my-u-s-college-education-is-worthless" target="_blank">Guest Voz: How do I go on DREAMing when Mexican gov’t says my U.S. college education is worthless</a>"
+                            -- <b><i>Latina Lista</i></b>, Nancy Landa, May 18, 2015</li>
+                        <br>
+                        <li>"<a href="https://www.theguardian.com/global/2015/may/17/deported-to-mexico-immigration-america" target="_blank">Deported to Mexico: a lost generation</a>"
+                            -- <b><i>The Guardian</i></b>, Nina Lakhani, May 17, 2015</li>
+                        <br>
+                        </ul>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs3 >
+                <v-card dark color="primary" class="flex-pad">
+                    <v-card-text>
+                        <h2>2014</h2>
+                        <br>
+                            <ul>
+                            <li>"<a href="http://www.latimes.com/world/la-fg-c1-mexico-dreamers-20141104-story.html" target="_blank">U.S.-raised Dreamers are building new lives — back in Mexico</a>"
+                                -- <b><i>Los Angeles Times</i></b>, Kate Linthicum, Nov 4, 2014</li>
+                            <br>
+                            <li>"<a href="https://www.nytimes.com/2014/07/23/opinion/two-countries-no-home.html?_r=0" target="_blank">Two Countries, No Home</a>"
+                                -- <b><i>New York Times</i></b>, Op-Docs, Verity Oswin and Leslie Atkins, July 22, 2014</li>
+                            <br>
+                            <li>"<a href="http://kuow.org/post/immigrant-leaves-america-chase-his-dreams-mexico" target="_blank">An Immigrant Leaves America To Chase His Dreams In Mexico</a>"
+                                -- <b><i>KUOW NPR</i></b>, Liz Jones, July 23, 2014</li>
+                            <br><br><br><br><br><br><br><br><br>
+                            </ul>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs3 >
+                <v-card dark color="primary" class="flex-pad">
+                    <v-card-text>
+                            <h2>2013</h2>
+                            <br>
+                                <ul>
+                                <li>"<a href="https://www.dallasnews.com/news/news/2013/10/27/from-mansfield-to-mexico-man-of-two-countries-is-at-home-in-neither" target="_blank">From Mansfield to Mexico: Man of two countries is at home in neither</a>"
+                                    -- <b><i>The Dallas Morning News</i></b>, Dianne Solís and Alfredo Corchado, Oct 27, 2013</li>
+                                <br>
+                                <li>"<a href="http://latinousa.org/2013/10/25/los-otros-dreamers/" target="_blank">Los Otros Dreamers</a>"
+                                    -- <b><i>Latino USA</i></b>, Maria Hinojosa and Brooke Binkowski, Oct 25, 2013</li>
+                                <br><br><br><br><br><br><br><br><br><br><br><br>
+                                </ul>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
           </v-card-text>
         </v-card>
     </v-tab-item>
@@ -172,8 +190,11 @@
       <v-card flat>
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
         <v-card-text>
-          <div class="row">
-            <div class="column" id="sixteen">
+        <v-container fluid grid-list-xl>
+          <v-layout row wrap justify-space-around>
+            <v-flex xs3 >
+                <v-card dark color="primary" class="flex-pad">
+                    <v-card-text>
               <h2>2016</h2>
               <br>
                 <ul>
@@ -189,53 +210,68 @@
                   <li>"<a href="https://www.pbs.org/newshour/show/young-deportees-start-over-in-mexico-after-growing-up-in-the-u-s" target="_blank">Young returnees start over in Mexico after growing up in the U.S.</a>"
                     -- <b><i>PBS NEWSHOUR</i></b>, Fred de Sam Lazero and the Under-Told Stories Project, January 6, 2016</li>
                 </ul>
-            </div>
-            <div class="column" id="fifteen">
-              <h2>2015</h2>
-              <br>
-                <ul>
-                  <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-after-88-months-in-mexico-as-a-dreamer-i-can-finally-return-home" target="_blank">Guest Voz: After 88 months in Mexico as a DREAMer, I can finally return home.</a>"
-                    -- <b><i>Latina Lista</i></b>, Magdalena Loredo, Oct 20, 2015</li>
-                  <br>
-                  <li>"<a href="http://www.caller.com/news/immigration/mexican-immigrants-once-in-us-face-ongoing-struggle-2043568d-b53d-4758-e053-0100007f4ba5-331767761.html" target="_blank">Mexican immigrants, once in U.S., face ongoing struggle</a>"
-                    -- <b><i>Corpus Christi Caller-Times</i></b>, Nadia Tamez-Robledo, Oct 10, 2015</li>
-                  <br>
-                  <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-how-do-i-go-on-dreaming-when-mexican-govt-says-my-u-s-college-education-is-worthless" target="_blank">Guest Voz: How do I go on DREAMing when Mexican gov’t says my U.S. college education is worthless</a>"
-                    -- <b><i>Latina Lista</i></b>, Nancy Landa, May 18, 2015</li>
-                  <br>
-                  <li>"<a href="https://www.theguardian.com/global/2015/may/17/deported-to-mexico-immigration-america" target="_blank">Deported to Mexico: a lost generation</a>"
-                    -- <b><i>The Guardian</i></b>, Nina Lakhani, May 17, 2015</li>
-                   <br>
-                </ul>
-            </div>
-            <div class="column" id="fourteen">
-              <h2>2014</h2>
-              <br>
-                <ul>
-                  <li>"<a href="http://www.latimes.com/world/la-fg-c1-mexico-dreamers-20141104-story.html" target="_blank">U.S.-raised Dreamers are building new lives — back in Mexico</a>"
-                    -- <b><i>Los Angeles Times</i></b>, Kate Linthicum, Nov 4, 2014</li>
-                  <br>
-                  <li>"<a href="https://www.nytimes.com/2014/07/23/opinion/two-countries-no-home.html?_r=0" target="_blank">Two Countries, No Home</a>"
-                    -- <b><i>New York Times</i></b>, Op-Docs, Verity Oswin and Leslie Atkins, July 22, 2014</li>
-                  <br>
-                  <li>"<a href="http://kuow.org/post/immigrant-leaves-america-chase-his-dreams-mexico" target="_blank">An Immigrant Leaves America To Chase His Dreams In Mexico</a>"
-                    -- <b><i>KUOW NPR</i></b>, Liz Jones, July 23, 2014</li>
-                  <br><br><br><br><br><br><br><br><br>
-                </ul>
-            </div>
-            <div class="column" id="thirteen">
-              <h2>2013</h2>
-              <br>
-                <ul>
-                  <li>"<a href="https://www.dallasnews.com/news/news/2013/10/27/from-mansfield-to-mexico-man-of-two-countries-is-at-home-in-neither" target="_blank">From Mansfield to Mexico: Man of two countries is at home in neither</a>"
-                    -- <b><i>The Dallas Morning News</i></b>, Dianne Solís and Alfredo Corchado, Oct 27, 2013</li>
-                  <br>
-                  <li>"<a href="http://latinousa.org/2013/10/25/los-otros-dreamers/" target="_blank">Los Otros Dreamers</a>"
-                    -- <b><i>Latino USA</i></b>, Maria Hinojosa and Brooke Binkowski, Oct 25, 2013</li>
-                  <br><br><br><br><br><br><br><br><br><br><br><br>
-                </ul>
-            </div>
-          </div>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs3 >
+                <v-card dark color="primary">
+                    <v-card-text class="flex-pad">
+                    <h2>2015</h2>
+                    <br>
+                        <ul>
+                        <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-after-88-months-in-mexico-as-a-dreamer-i-can-finally-return-home" target="_blank">Guest Voz: After 88 months in Mexico as a DREAMer, I can finally return home.</a>"
+                            -- <b><i>Latina Lista</i></b>, Magdalena Loredo, Oct 20, 2015</li>
+                        <br>
+                        <li>"<a href="http://www.caller.com/news/immigration/mexican-immigrants-once-in-us-face-ongoing-struggle-2043568d-b53d-4758-e053-0100007f4ba5-331767761.html" target="_blank">Mexican immigrants, once in U.S., face ongoing struggle</a>"
+                            -- <b><i>Corpus Christi Caller-Times</i></b>, Nadia Tamez-Robledo, Oct 10, 2015</li>
+                        <br>
+                        <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-how-do-i-go-on-dreaming-when-mexican-govt-says-my-u-s-college-education-is-worthless" target="_blank">Guest Voz: How do I go on DREAMing when Mexican gov’t says my U.S. college education is worthless</a>"
+                            -- <b><i>Latina Lista</i></b>, Nancy Landa, May 18, 2015</li>
+                        <br>
+                        <li>"<a href="https://www.theguardian.com/global/2015/may/17/deported-to-mexico-immigration-america" target="_blank">Deported to Mexico: a lost generation</a>"
+                            -- <b><i>The Guardian</i></b>, Nina Lakhani, May 17, 2015</li>
+                        <br>
+                        </ul>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs3 >
+                <v-card dark color="primary" class="flex-pad">
+                    <v-card-text>
+                        <h2>2014</h2>
+                        <br>
+                            <ul>
+                            <li>"<a href="http://www.latimes.com/world/la-fg-c1-mexico-dreamers-20141104-story.html" target="_blank">U.S.-raised Dreamers are building new lives — back in Mexico</a>"
+                                -- <b><i>Los Angeles Times</i></b>, Kate Linthicum, Nov 4, 2014</li>
+                            <br>
+                            <li>"<a href="https://www.nytimes.com/2014/07/23/opinion/two-countries-no-home.html?_r=0" target="_blank">Two Countries, No Home</a>"
+                                -- <b><i>New York Times</i></b>, Op-Docs, Verity Oswin and Leslie Atkins, July 22, 2014</li>
+                            <br>
+                            <li>"<a href="http://kuow.org/post/immigrant-leaves-america-chase-his-dreams-mexico" target="_blank">An Immigrant Leaves America To Chase His Dreams In Mexico</a>"
+                                -- <b><i>KUOW NPR</i></b>, Liz Jones, July 23, 2014</li>
+                            <br><br><br><br><br><br><br><br><br>
+                            </ul>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs3 >
+                <v-card dark color="primary" class="flex-pad">
+                    <v-card-text>
+                            <h2>2013</h2>
+                            <br>
+                                <ul>
+                                <li>"<a href="https://www.dallasnews.com/news/news/2013/10/27/from-mansfield-to-mexico-man-of-two-countries-is-at-home-in-neither" target="_blank">From Mansfield to Mexico: Man of two countries is at home in neither</a>"
+                                    -- <b><i>The Dallas Morning News</i></b>, Dianne Solís and Alfredo Corchado, Oct 27, 2013</li>
+                                <br>
+                                <li>"<a href="http://latinousa.org/2013/10/25/los-otros-dreamers/" target="_blank">Los Otros Dreamers</a>"
+                                    -- <b><i>Latino USA</i></b>, Maria Hinojosa and Brooke Binkowski, Oct 25, 2013</li>
+                                <br><br><br><br><br><br><br><br><br><br><br><br>
+                                </ul>
+                </v-card-text>
+                </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
         </v-card-text>
       </v-card>
     </v-tab-item>
@@ -276,46 +312,10 @@ export default {
 </script>
 
 <style>
-.column {
-    display: block;
-    float: left;
-    width: 24%;
-    padding: 50px;
-    border-spacing: 1000px;
+.flex-pad{
+    padding: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    width: 100%;
-}
-  #sixteen {
-    margin: 5% auto;
-    width: 23%;
-    background-color: #327d9e;
-    border-radius: 16px 16px 16px 16px;
-  }
-  #fifteen {
-    margin: 5% auto;
-    width: 23%;
-    background-color: #388cb1;
-    border-radius: 16px 16px 16px 16px;
-  }
-  #fourteen {
-    margin: 5% auto;
-    width: 23%;
-    background-color: #409bc3;
-    border-radius: 16px 16px 16px 16px;
-  }
-  #thirteen {
-    margin: 5% auto;
-    float: right;
-    width: 23%;
-    background-color: #53a5c9;
-    border-radius: 16px 16px 16px 16px;
-  }
   #carousel {
     width: 80%;
     display: block;

@@ -10,6 +10,9 @@ module.exports = {
   */
   head: {
     title: 'oda-finalproject',
+    htmlAttrs: {
+      lang: 'eng',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

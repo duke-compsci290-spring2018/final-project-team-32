@@ -4,7 +4,6 @@
     <v-navigation-drawer
       temporary
       v-model="drawer"
-      :mini-variant="mini"
       light
       absolute
     >
@@ -73,7 +72,7 @@
         <v-btn to="/" flat>Inicio</v-btn>
         <v-btn to="/about" flat>Nosotros</v-btn>
         <v-btn to="/projects" flat>Proyectos</v-btn>
-        <v-btn to="/faq" flat>FAQ</v-btn>
+        <v-btn to="/faq" flat>Preguntas</v-btn>
         <v-btn to="/donate" color="blue">Donar</v-btn>
         <v-btn v-if="$store.state.role ==='user' || $store.state.role ==='admin'" @click="signOut" >Desinscribirse</v-btn>
       </v-toolbar-items>
