@@ -29,7 +29,7 @@
         </v-flex>
     </ul>
     </v-layout>
-  <project-list :projects="projectsTest" title="Our Projects"></project-list>
+  <project-list :projects="projectsTest" title="Our Projects" alt=""></project-list>
               <v-layout v-if="$store.state.role ==='admin'" justify-space-around>
                 <v-form>
                  <h1>Add New Project</h1>
