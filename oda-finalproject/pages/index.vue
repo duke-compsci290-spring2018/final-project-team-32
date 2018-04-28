@@ -13,6 +13,7 @@
       <v-layout column align-center justify-center>
       </v-layout>
     </v-parallax>
+    <site-footer></site-footer>
   </v-app>
 </template>
 
@@ -20,12 +21,14 @@
 import firebase from '~/services/firebaseApp'
 import { mapState } from 'vuex'
 import SiteHeader from '~/components/SiteHeader'
+import SiteFooter from '~/components/SiteFooter'
 import LangToggle from '~/components/LangToggle'
 
 export default {
   components: {
     SiteHeader,
-    LangToggle
+    LangToggle,
+    SiteFooter
   },
   methods: {
     signOut: function() {
