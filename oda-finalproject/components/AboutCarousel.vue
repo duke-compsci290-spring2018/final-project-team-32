@@ -7,6 +7,9 @@
 
 <script>
     import AboutSlide from './AboutSlide';
+    if (process.browser) {
+        require('vue-carousel')
+    }
 
     export default {
         name: 'about-carousel',

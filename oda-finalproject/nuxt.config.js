@@ -25,7 +25,7 @@ module.exports = {
 
     ],
   },
-  plugins: ['~plugins/vue-scrollto.js', { src: '~plugins/vue-carousel', ssr: false }, '~plugins/vuetify.js'],
+  plugins: ['~plugins/vue-scrollto.js', { src: '~plugins/vue-carousel.js', ssr: false }, '~plugins/vuetify.js'],
   css: ['~assets/app.styl'],
   /*
 

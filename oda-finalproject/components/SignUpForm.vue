@@ -121,7 +121,8 @@ export default {
       firebase.database().ref('users/' + userId).set({
         username: name,
         email: email,
-        role: userRole
+        role: userRole,
+        amount: 0
         // profile_picture : imageUrl
     });
     this.email='',

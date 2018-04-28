@@ -5,7 +5,8 @@
             <img :src="person.image"/>
         </div>
         <h2>{{person.name}}</h2>
-        <p>{{person.description}}</p>
+        <p v-if="$store.state.lang==='eng'">{{person.description}}</p>
+        <p v-else>{{person.description_esp}}</p>
     </div>
 </slide>
 
@@ -13,6 +14,11 @@
 
 
 <script>
+import { mapState } from 'vuex'
+
+if (process.browser) {
+  require('vue-carousel')
+}
 export default {
     name: 'about-slide',
     props: ['person'],
