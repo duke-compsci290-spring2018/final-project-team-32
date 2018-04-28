@@ -1,6 +1,64 @@
 <template>
     <v-toolbar>
-      <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
+    <v-toolbar-side-icon @click.stop="drawer = !drawer" dark></v-toolbar-side-icon>
+    <v-navigation-drawer
+      temporary
+      v-model="drawer"
+      :mini-variant="mini"
+      light
+      absolute
+    >
+      <v-list dense>
+        <v-list-tile to="/">
+          <v-list-tile-action>
+            <v-icon>home</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Home</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile to="/about">
+          <v-list-tile-action>
+            <v-icon></v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>About</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile to="/projects">
+          <v-list-tile-action>
+            <v-icon></v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Projects</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile to="/faq">
+          <v-list-tile-action>
+            <v-icon></v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>FAQ</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile to="/donate">
+          <v-list-tile-action>
+            <v-icon></v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Donate</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>contact_mail</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Contact</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
       <v-toolbar-title>ODA</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="$store.state.lang ==='eng'" class="hidden-sm-and-down">
@@ -30,7 +88,8 @@ export default {
     name: 'site-header',
     data() {
         return {
-
+          drawer: false,
+          home: false
         }
     },
     methods: {
