@@ -23,7 +23,8 @@
               </v-card-text>
         </v-card>
         <v-card>
-          <v-card-title>     <h1 class="sec02">Our Values</h1>
+          <v-card-title>
+            <h1 class="sec02">Our Values</h1>
           </v-card-title>
           <v-card-text>
             In ODA, we seek to be authentic and adventurous.  We are determined to contribute to our community by accepting challenges, as well as letting friendship guide us. We fight the good fight when it comes to Justice for everyone. Kindness, Accountability, Optimism, Community and Love are the values that we share and try to put into action every day.
@@ -45,41 +46,6 @@
               <div id="carousel">
                 <about-carousel :people="thePeople"></about-carousel>
               </div>
-            </v-card-text>
-        </v-card>
-    </v-tab-item>
-    <v-tab-item v-if="$store.state.lang === 'esp'">
-        <v-card>
-            <v-card-title><h1>Nosotros</h1></v-card-title>
-            <v-card-text>
-              <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
-                  <p>Lo que alimenta ODA es el valor de poder hacer alguna diferencia en la vida de alguna persona. No importa cómo o cuando vayamos a crecer en tamaño, pero sí importa cuántas semillas podamos plantar atreves de hacer presencia por nuestra comunidad de migrantes retornados y deportados. Sabemos que al permanecer firmes con nuestros principios vamos a crecer y evolucionar como una comunidad empoderada y sustentable.
-                  </p>
-              </v-card-text>
-              <v-card-text>
-                  Otros Dreams en Acción cuenta con cuatro aspectos importantes y significativos. El primero, ODA aboga por la reunificación de nuestras familias que están divididas por la frontera militarizada entre México-EEUU. En segundo, reclamamos derechos legales y responsabilidades-incluyendo pero no limitada a movilidad internacional- como miembros de la comunidad nacional estadounidense desde nuestra localidad actual, al otro lado, en pueblos y ciudades a lo largo de México. Tercero, ODA aboga por la integración y transformación en México. Por ultimo pero no menos importante, los miembros de ODA se apoyan mutuamente sin importar bajo qué circunstancias hayan regresado alguien a México, y la diversidad de status migratorios y la movilidad entre nuestra comunidad.
-              </v-card-text>
-        </v-card>
-        <v-card>
-          <v-card-title>     <h1 class="sec02">Nuestros Principios</h1>
-          </v-card-title>
-          <v-card-text>
-              En ODA buscamos ser auténticos y venturosos. Estamos determinados a contribuir a nuestra comunidad aceptando los retos, así como dejar que la Amistad sea nuestra guía. Luchamos cuando se trata de justicia para todos. Amabilidad, responsabilidad, optimismo, comunidad y amor son los principios que compartimos y los cuales día a día tratamos de implementar.
-                Sabemos de primera mano cómo está el sistema migratorio actual en Los Estados Unidos e incluso como este nos criminalice a nosotros y a nuestras familias. Así como las semillas de dientes de león crecen en donde sea que sean arrojadas por el viento, nosotros creemos en nuestros derechos y en nuestro potencial para crecer en donde sea que aterricemos. Así como las semillas de diente de león necesitan tierra, agua y rayos del sol, nosotros aun requerimos de nuestras necesidades básicas para crecer y prosperar aquí y allá: de manera segura, con salud, y en comunidad, a la par con acceso a oportunidades educativas, unificación familiar y movilidad internacional de manera legal.
-          </v-card-text>
-          <v-card-text>
-            Estamos comprometidos con la lucha, por el reconocimiento en su totalidad de los derechos humanos de los migrantes en donde sea que nos encontremos, y de igual manera estamos comprometidos con los responsabilidades humanas para cuidarnos a nosotros mismos, nuestras familias, nuestras comunidades y los recursos naturales que nos sostienen.
-            No somos una organización no lucrativa tradicional. Somos una organización basada en la comunidad y fundada por medio del trabajo y la dedicación de nuestros miembros voluntarios, donaciones directas, y proyectos basados en becas. Tomamos decisiones por medio de consenso y distribuimos los recursos de acuerdo a la dinámica de las prioridades y circunstancias.          </v-card-text>
-        </v-card>
-        <v-card flat>
-            <v-card-title> <h1> Nuestro Equipo de Lideres </h1></v-card-title>
-            <v-card-text> La idea de Otros Dreams en Acción fue creada justo antes de la puesta del sol el 28 de Octubre de 2016 en la Playa de Newport, California. Sin saber exactamente qué sucedería después, pero con la determinación de continuar iluminado las brasas de todo lo que había sucedido antes, Maggie Loredo y Jill Anderson se comprometieron a construir ODA. Ellas se conocieron como para de la red bilingüe y bicultural de jóvenes en México por medio del Libro Los Otros Dreamers. Las donaciones recaudadas ayudaron a fundar y a la creación de este sitio web.
-            </v-card-text>
-            <v-card-text>
-                Hoy, ODA es apoyado por aliados en todo el mundo, una red solida de jóvenes retornados y deportados atreves de México, y por nuestro equipo de líderes: Maggie Loredo, Jill Anderson, Víctor Saucedo, Manuel Torres, Enrique Rojas, Víctor Hugo Manuel y Viridiana Chávez.
-            </v-card-text>
-            <v-card-text>
-                <about-carousel :people="thePeople"></about-carousel>
             </v-card-text>
         </v-card>
     </v-tab-item>
@@ -147,7 +113,8 @@
               </v-card-text>
         </v-card>
         <v-card>
-          <v-card-title>     <h1 class="sec02">Nuestros Principios</h1>
+          <v-card-title>
+            <h1 class="sec02">Nuestros Principios</h1>
           </v-card-title>
           <v-card-text>
               En ODA buscamos ser auténticos y venturosos. Estamos determinados a contribuir a nuestra comunidad aceptando los retos, así como dejar que la Amistad sea nuestra guía. Luchamos cuando se trata de justicia para todos. Amabilidad, responsabilidad, optimismo, comunidad y amor son los principios que compartimos y los cuales día a día tratamos de implementar.
