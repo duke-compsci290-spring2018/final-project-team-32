@@ -1,19 +1,23 @@
 // http://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57c4caf96a49631abe29f1e4/1523961338145/?format=1500w
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" lang="en">
     <site-header></site-header>
     <lang-toggle></lang-toggle>
     <v-parallax src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57ea1f1315d5db35a6477a6f/1473216312216/?format=1500w" alt="people talking around a desk">
       <v-layout column align-center justify-center>
-        <h1 v-if="$store.state.lang==='eng'">Welcome</h1>
+      <div class="">
+        <h1 v-if="$store.state.lang==='eng'" >Welcome</h1>
         <h1 v-else>Bienvenido</h1>
+        <v-btn v-if="$store.state.lang==='eng'" to="/about">About Us</v-btn>
+        <v-btn v-else to="/about">Nosotros</v-btn>
+      </div>
       </v-layout>
     </v-parallax>
     <v-parallax src="http://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57c4caf96a49631abe29f1e4/1523961338145/?format=1500w" alt = "ODA logo">
       <v-layout column align-center justify-center>
       </v-layout>
     </v-parallax>
-    <site-footer></site-footer>
+    <site-footer ></site-footer>
   </v-app>
 </template>
 

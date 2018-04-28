@@ -4,7 +4,6 @@
     <v-navigation-drawer
       temporary
       v-model="drawer"
-      light
       absolute
     >
       <v-list dense>
@@ -58,10 +57,13 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-      <v-toolbar-title>ODA</v-toolbar-title>
+<!--       <v-toolbar-title to="/" flat>ODA</v-toolbar-title> -->
+      <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn to="/" color=""> <h1>ODA </h1></v-btn>
+    </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="$store.state.lang ==='eng'" class="hidden-sm-and-down">
-        <v-btn to="/" flat>Home</v-btn>
+<!--         <v-btn to="/" flat>Home</v-btn> -->
         <v-btn to="/about" flat>About</v-btn>
         <v-btn to="/projects" flat>Projects</v-btn>
         <v-btn to="/faq" flat>FAQ</v-btn>
@@ -88,7 +90,7 @@ export default {
     data() {
         return {
           drawer: false,
-          home: false
+          home: false,
         }
     },
     methods: {
