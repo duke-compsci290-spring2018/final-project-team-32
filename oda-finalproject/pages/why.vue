@@ -3,7 +3,15 @@
     <site-header></site-header>
     <lang-toggle></lang-toggle>
     <v-content>
-        <v-container fluid grid-list-xl>
+      <v-container center grid-list-md dark>
+        <v-card align="center"> 
+          <Tweet :id="'983717279027179520'" dark></Tweet>
+          <div align="center">
+            <a class="twitter-timeline"  href="https://twitter.com/hashtag/dreamers" data-widget-id="990458493500051456">#dreamers Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </v-card>
+      </v-container>
 <!--     <v-layout justify-space-around>
     <ul class="nav-images">
         <v-flex xs4 class="nav-img">
@@ -23,7 +31,9 @@
         </v-flex>
     </ul>
     </v-layout> -->
+    <v-container fluid grid-list-xl>
       <v-card> 
+        <v-card-title> <h2> Other Organizations </h2> </v-card-title>
       <v-card-text>
         <why-carousel :links="theLinks"></why-carousel>
       </v-card-text>
@@ -42,6 +52,7 @@ import theLinks from '~/static/links.json'
 import WhyCarousel from '~/components/WhyCarousel'
 import { mapState } from 'vuex'
 import axios from 'axios'
+import { Tweet } from 'vue-tweet-embed'
 
 if (process.browser) {
   require('vue-carousel')
@@ -52,6 +63,7 @@ export default {
       SiteHeader,
       LangToggle,
       WhyCarousel,
+      Tweet,
       SiteFooter
   },
   data() {
@@ -82,12 +94,12 @@ ul{
 /*    border-radius: 40px 40px 40px 40px;*/
 }
 
-  #carousel {
+#carousel {
     width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 </style>
 
