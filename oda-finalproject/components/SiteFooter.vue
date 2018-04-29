@@ -1,5 +1,6 @@
 <template>
 <div id="nav" class="nav">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <section>
         <v-container grid-list-xl>
           <v-layout row wrap justify-center class="my-5">
@@ -53,7 +54,27 @@
         </v-container>
       </section>
     <v-footer color="blue" app inset>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span class="white--text">&copy; Sierra, Rikki, Charlotte 2018</span>
+      <v-spacer></v-spacer>
+
+      <a href="https://twitter.com/OtrosDreams_ODA" target="blank">
+        <v-icon medium color="white">fa-twitter</v-icon>
+      </a>
+      <v-icon color="white">fa</v-icon>
+      <a href="mailto:odamx2016@gmail.com" target="blank">
+        <v-icon medium color="white">email</v-icon>
+      </a>
+      <v-icon color="white">fa</v-icon>
+      <a href="https://www.youtube.com/channel/UCfq7vfqdTlESirU6uDIg6Kg" target="blank">
+        <v-icon medium color="white">fa-youtube</v-icon>
+      </a>
+      <v-icon color="white">fa</v-icon>
+      <a href="https://www.facebook.com/maggie.loredo.1" target="blank">
+        <v-icon medium color="white">fa-facebook</v-icon>
+      </a>
+      <v-icon color="white">fa</v-icon>
+
     </v-footer>
     </div>
 </template>
@@ -73,4 +94,3 @@ export default {
 <style>
 
 </style>
-
