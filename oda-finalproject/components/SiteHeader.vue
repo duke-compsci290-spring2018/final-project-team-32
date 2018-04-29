@@ -12,7 +12,8 @@
             <v-icon>home</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Home</v-list-tile-title>
+            <v-list-tile-title v-if="$store.state.lang ==='eng'">Home</v-list-tile-title>
+            <v-list-tile-title v-else>Informática</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile to="/about">
@@ -20,7 +21,17 @@
             <v-icon></v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>About</v-list-tile-title>
+            <v-list-tile-title v-if="$store.state.lang ==='eng'">About</v-list-tile-title>
+            <v-list-tile-title v-else>Inicio</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile to="/why">
+          <v-list-tile-action>
+            <v-icon></v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title v-if="$store.state.lang ==='eng'">Why</v-list-tile-title>
+            <v-list-tile-title v-else>Porque</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile to="/projects">
@@ -28,7 +39,8 @@
             <v-icon></v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Projects</v-list-tile-title>
+            <v-list-tile-title v-if="$store.state.lang ==='eng'">Projects</v-list-tile-title>
+            <v-list-tile-title v-else>Proyectos</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile to="/faq">
@@ -36,7 +48,8 @@
             <v-icon></v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>FAQ</v-list-tile-title>
+            <v-list-tile-title v-if="$store.state.lang ==='eng'">FAQ</v-list-tile-title>
+            <v-list-tile-title v-else>Preguntas</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile to="/donate">
@@ -44,17 +57,18 @@
             <v-icon></v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Donate</v-list-tile-title>
+            <v-list-tile-title v-if="$store.state.lang ==='eng'">Donate</v-list-tile-title>
+            <v-list-tile-title v-else>Donar</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile>
+<!--         <v-list-tile>
           <v-list-tile-action>
             <v-icon>contact_mail</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>Contact</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
+        </v-list-tile> -->
       </v-list>
     </v-navigation-drawer>
 <!--       <v-toolbar-title to="/" flat>ODA</v-toolbar-title> -->
