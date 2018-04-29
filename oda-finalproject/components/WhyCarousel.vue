@@ -1,5 +1,5 @@
 <template>
-        <carousel :perPage=4 :navigationEnabled=true>
+        <carousel :perPage=3 :navigationEnabled=true>
             <why-slide v-for="link in links" :link="link" :key="link.name">
                 
             </why-slide>

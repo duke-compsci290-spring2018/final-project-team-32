@@ -74,6 +74,7 @@
       <v-toolbar-items v-else>
         <v-btn to="/" flat>Inicio</v-btn>
         <v-btn to="/about" flat>Nosotros</v-btn>
+        <v-btn to="/why" flat>Porqué</v-btn>
         <v-btn to="/projects" flat>Proyectos</v-btn>
         <v-btn to="/faq" flat>Preguntas</v-btn>
         <v-btn to="/donate" color="blue">Donar</v-btn>
