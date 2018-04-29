@@ -65,6 +65,7 @@
       <v-toolbar-items v-if="$store.state.lang ==='eng'" class="hidden-sm-and-down">
 <!--         <v-btn to="/" flat>Home</v-btn> -->
         <v-btn to="/about" flat>About</v-btn>
+        <v-btn to="/why" flat>Why</v-btn>
         <v-btn to="/projects" flat>Projects</v-btn>
         <v-btn to="/faq" flat>FAQ</v-btn>
         <v-btn to="/donate" color="blue">Donate</v-btn>
