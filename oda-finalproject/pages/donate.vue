@@ -2,9 +2,8 @@
 <v-app id="inspire">
     <site-header></site-header>
     <lang-toggle></lang-toggle>
-    <v-container fluid grid-list-xl>
+    <v-container>
     <v-layout row>
-
     <v-flex v-if="$store.state.role ==='user' || $store.state.role ==='admin'" xs12 :align-content-center="true" :align-center="true">
         <h1>Donate</h1>
         <v-form>
@@ -19,7 +18,7 @@
     </v-flex>
     </v-layout>
     
-    <v-layout>
+    <v-layout row>
     <v-flex v-if="$store.state.role ==='guest'" xs12>
         <login-form></login-form>
     </v-flex>

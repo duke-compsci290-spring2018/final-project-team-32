@@ -1,10 +1,12 @@
 <template>
-    <li class="project-list-item">
-        <img :src="project.image">
-        <p class="project-name"><a :id="project.linkName">{{project.name}}</a></p>
-        <p v-if="$store.state.lang === 'eng'">{{project.description}}</p>
-        <p v-else>{{project.description_esp}}</p>
-    </li>
+<v-layout row>
+    <v-flex xs12>
+                <img :src="project.image">
+                <p class="project-name"><a>{{project.name}}</a></p>
+                <p v-if="$store.state.lang === 'eng'">{{project.description}}</p>
+                <p v-else>{{project.description_esp}}</p>
+    </v-flex>
+</v-layout>
 </template>
 
 <script>
@@ -19,10 +21,10 @@ export default {
 </script>
 
 <style scoped>
-.project-list-item img{
+/* .project-list-item img{
     display: block;
     margin: 2%;
-}
+} */
     img {
         max-width: 40%;
         float: left;

@@ -43,12 +43,12 @@
             </v-card-text>
             <v-card-text>
             Today, ODA is supported by allies around the world, a strong network of returned and deported youth across Mexico, and some of our Leadership Team are: Maggie Loredo, Jill Anderson, Victor Saucedo, Enrique Rojas, Cesar Maldonado, Adriana Figueroa, Victor Hugo Manuel and many more. </v-card-text>
-            <v-card-text>
-              <div id="carousel">
-                <about-carousel :people="thePeople"></about-carousel>
-              </div>
-            </v-card-text>
         </v-card>
+        <v-card>
+            <v-card-text>
+                <about-carousel :people="thePeople"></about-carousel>
+            </v-card-text>
+        </v-card>        
     </v-tab-item>
     <v-tab-item>
         <v-card flat>
@@ -78,8 +78,8 @@
                 </v-card>
             </v-flex>
             <v-flex xs3 >
-                <v-card dark color="primary" class="flex-pad">
-                    <v-card-text>
+                <v-card dark color="primary">
+                    <v-card-text class="flex-pad">
                     <h2>2015</h2>
                     <br>
                         <ul>
@@ -94,7 +94,7 @@
                         <br>
                         <li>"<a href="https://www.theguardian.com/global/2015/may/17/deported-to-mexico-immigration-america" target="_blank">Deported to Mexico: a lost generation</a>"
                             -- <b><i>The Guardian</i></b>, Nina Lakhani, May 17, 2015</li>
-                        <br><br>
+                        <br>
                         </ul>
                 </v-card-text>
                 </v-card>
@@ -113,7 +113,7 @@
                             <br>
                             <li>"<a href="http://kuow.org/post/immigrant-leaves-america-chase-his-dreams-mexico" target="_blank">An Immigrant Leaves America To Chase His Dreams In Mexico</a>"
                                 -- <b><i>KUOW NPR</i></b>, Liz Jones, July 23, 2014</li>
-                            <br><br><br><br><br><br><br><br>
+                            <br><br><br><br><br><br><br><br><br>
                             </ul>
                 </v-card-text>
                 </v-card>
@@ -214,11 +214,11 @@
                 </v-card>
             </v-flex>
             <v-flex xs3 >
-                <v-card dark color="primary" class="flex-pad">
-                    <v-card-text>
+                <v-card dark color="primary">
+                    <v-card-text class="flex-pad">
                     <h2>2015</h2>
                     <br>
-                      <ul>
+                        <ul>
                         <li>"<a href="http://latinalista.com/columns/guestvoz/guest-voz-after-88-months-in-mexico-as-a-dreamer-i-can-finally-return-home" target="_blank">Guest Voz: After 88 months in Mexico as a DREAMer, I can finally return home.</a>"
                             -- <b><i>Latina Lista</i></b>, Magdalena Loredo, Oct 20, 2015</li>
                         <br>
@@ -230,8 +230,8 @@
                         <br>
                         <li>"<a href="https://www.theguardian.com/global/2015/may/17/deported-to-mexico-immigration-america" target="_blank">Deported to Mexico: a lost generation</a>"
                             -- <b><i>The Guardian</i></b>, Nina Lakhani, May 17, 2015</li>
-                        <br><br>
-                      </ul>
+                        <br>
+                        </ul>
                 </v-card-text>
                 </v-card>
             </v-flex>
@@ -240,7 +240,7 @@
                     <v-card-text>
                         <h2>2014</h2>
                         <br>
-                          <ul>
+                            <ul>
                             <li>"<a href="http://www.latimes.com/world/la-fg-c1-mexico-dreamers-20141104-story.html" target="_blank">U.S.-raised Dreamers are building new lives — back in Mexico</a>"
                                 -- <b><i>Los Angeles Times</i></b>, Kate Linthicum, Nov 4, 2014</li>
                             <br>
@@ -249,8 +249,8 @@
                             <br>
                             <li>"<a href="http://kuow.org/post/immigrant-leaves-america-chase-his-dreams-mexico" target="_blank">An Immigrant Leaves America To Chase His Dreams In Mexico</a>"
                                 -- <b><i>KUOW NPR</i></b>, Liz Jones, July 23, 2014</li>
-                            <br><br><br><br><br><br><br><br>
-                          </ul>
+                            <br><br><br><br><br><br><br><br><br>
+                            </ul>
                 </v-card-text>
                 </v-card>
             </v-flex>
@@ -259,14 +259,14 @@
                     <v-card-text>
                             <h2>2013</h2>
                             <br>
-                              <ul>
+                                <ul>
                                 <li>"<a href="https://www.dallasnews.com/news/news/2013/10/27/from-mansfield-to-mexico-man-of-two-countries-is-at-home-in-neither" target="_blank">From Mansfield to Mexico: Man of two countries is at home in neither</a>"
                                     -- <b><i>The Dallas Morning News</i></b>, Dianne Solís and Alfredo Corchado, Oct 27, 2013</li>
                                 <br>
                                 <li>"<a href="http://latinousa.org/2013/10/25/los-otros-dreamers/" target="_blank">Los Otros Dreamers</a>"
                                     -- <b><i>Latino USA</i></b>, Maria Hinojosa and Brooke Binkowski, Oct 25, 2013</li>
                                 <br><br><br><br><br><br><br><br><br><br><br><br>
-                              </ul>
+                                </ul>
                 </v-card-text>
                 </v-card>
             </v-flex>
@@ -312,10 +312,8 @@ export default {
 </script>
 
 <style>
-.flex-pad {
+.flex-pad{
     padding: 20px;
-    text-align: left;
-    border-radius: 25px 25px 25px 25px;
 }
 
   #carousel {
@@ -324,9 +322,18 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
+  a:link {
+      color: black;
+  }
 
+  /* visited link */
   a:visited {
-    color: black;
+      color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: red;
   }
 
   h2 {
