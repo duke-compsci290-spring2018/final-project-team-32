@@ -17,6 +17,7 @@
             <project-list :projects="projectsTest" title="Our Projects" alt=""></project-list>
         </v-layout>
         <v-layout v-if="$store.state.role ==='admin'" justify-space-around>
+            <v-flex xs6>
                 <v-form>
                  <h1>Add New Project</h1>
                 <v-text-field
@@ -27,6 +28,12 @@
                 <v-text-field
                     label="Project Description"
                     v-model="description"
+                    required
+                    multi-line
+                    ></v-text-field>
+                    <v-text-field
+                    label="Project Description in Spanish"
+                    v-model="description_esp"
                     required
                     multi-line
                     ></v-text-field>
@@ -42,6 +49,7 @@
                 ></v-text-field>
                 <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
                 </v-form>
+                </v-flex>
             </v-layout>
 </v-container>
 </v-content>
@@ -82,6 +90,7 @@ export default {
       description: '',
       image: '',
       image_title: '',
+      description_esp: ''
     };
   },
   methods : {
@@ -91,6 +100,7 @@ export default {
         firebase.database().ref('projects/' + myRef).set({
             name: self.title,
             description: self.description,
+            description_esp: self.description_esp,
             image_title: self.image,
             image: self.image,
             linkName: myRef

@@ -34,22 +34,10 @@ export default {
     LangToggle,
     SiteFooter
   },
-  methods: {
-    signOut: function() {
-        let self = this
-        firebase.auth().signOut().then(function() {
-            self.$store.state.role= 'guest'
-            console.log("signed out")
-        // Sign-out successful.
-        }, function(error) {
-            // An error happened.
-        });
-    }
-  }
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   min-height: 100vh;
   display: flex;

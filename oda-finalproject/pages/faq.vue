@@ -6,7 +6,6 @@
     <v-content v-if="$store.state.lang ==='eng'">
         <v-container fluid grid-list-xl>
     <v-layout justify-space-around>
-
     <ul class="nav-images">
         <v-flex xs2 class="nav-img">
             <a href="#" v-scroll-to="'#-LB74ZplvyrrpuZWG0j6'">
