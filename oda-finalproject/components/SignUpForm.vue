@@ -89,7 +89,7 @@ export default {
       email: '',
       password: '' ,
       name: '',
-      e1: false,
+      e1: true,
       roles: [
         {text: 'user'},
         {text: 'admin'}
@@ -98,7 +98,7 @@ export default {
       emailRules: [
         v => !!v || 'E-mail is required',
         v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-    ]
+    ],
     };
   },
   methods: {

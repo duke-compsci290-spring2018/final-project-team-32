@@ -15,8 +15,11 @@
             v-model="password"
             label="Password"
             min="8"
-            required
+            :append-icon="e1 ? 'visibility' : 'visibility_off'"
+            :append-icon-cb="() => (e1 = !e1)"
+            :type="e1 ? 'password' : 'text'"
             counter
+            required
         ></v-text-field>
       <v-btn v-on:click="handler" color="info">Log In</v-btn>
       <p>Don't have an account? You can <nuxt-link to="/account/signup">create one here</nuxt-link></p>
@@ -35,6 +38,9 @@
             v-model="password"
             label="Contraseña"
             min="8"
+            :append-icon="e1 ? 'visibility' : 'visibility_off'"
+            :append-icon-cb="() => (e1 = !e1)"
+            :type="e1 ? 'password' : 'text'"
             required
             counter
         ></v-text-field>
@@ -59,8 +65,9 @@ export default {
       formError: null,
       emailRules: [
       v => !!v || 'E-mail is required',
-      v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-    ]
+      v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'],
+      e1: true
+
     };
   },
   methods: {

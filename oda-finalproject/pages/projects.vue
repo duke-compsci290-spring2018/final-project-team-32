@@ -4,19 +4,19 @@
     <lang-toggle></lang-toggle>
     <v-content>
     <v-container grid-list-md>
-        <!-- <v-layout row justify-space-around>
-            <v-flex xs4 v-for="project in projectsTest" :key="project">
-                <v-card class="nav-img">
-                    <a href="#" v-scroll-to="project.linkName">
-                        <img  :src="project.image">
+        <v-layout row justify-space-around>
+            <v-flex align-content-space-around=true xs4 v-for="project in projectsTest" :key="project.id">
+                    <a href="#" v-scroll-to="'#'+project.linkName">
+                        <img :src="project.image" :alt="project.image_title">
                     </a>
-                </v-card>
             </v-flex>
-        </v-layout> -->
-        <v-layout>
-            <project-list :projects="projectsTest" title="Our Projects" alt=""></project-list>
         </v-layout>
-        <v-layout v-if="$store.state.role ==='admin'" justify-space-around>
+        <v-layout row justify-space-around>
+            <h2 v-if="$store.state.lang === 'eng'">Our Projects</h2>
+            <h2 v-else>Nuestros Proyectos</h2>
+        </v-layout>
+        <project-list :projects="projectsTest" title="Our Projects" alt=""></project-list>
+        <v-layout row v-if="$store.state.role==='admin'">
             <v-flex xs6>
                 <v-form>
                  <h1>Add New Project</h1>
@@ -49,14 +49,13 @@
                 ></v-text-field>
                 <v-btn v-on:click="addProject" color="info">Add Project</v-btn>
                 </v-form>
-                </v-flex>
+            </v-flex>
             </v-layout>
 </v-container>
 </v-content>
 <site-footer></site-footer>
 </v-app>
 </template>
-
 <script>
 import SiteHeader from '~/components/SiteHeader'
 import SiteFooter from '~/components/SiteFooter'
@@ -116,6 +115,7 @@ export default {
 </script>
 
 <style scoped>
+
 ul{
     list-style-type: none;
     display: flex;
@@ -123,7 +123,7 @@ ul{
     align-items: center;
     justify-content: space-around;
 }
-.nav-img img{
+img{
     width: 150px;
 }
 /* #content-container{
