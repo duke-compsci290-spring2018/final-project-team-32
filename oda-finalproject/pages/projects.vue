@@ -59,11 +59,13 @@
             </v-layout>
 </v-container>
 </v-content>
+<site-footer></site-footer>
 </v-app>
 </template>
 
 <script>
 import SiteHeader from '~/components/SiteHeader'
+import SiteFooter from '~/components/SiteFooter'
 import ProjectList from '~/components/ProjectList'
 import LangToggle from '~/components/LangToggle'
 import { mapState } from 'vuex'
@@ -82,6 +84,7 @@ export default {
   },
   components: {
       SiteHeader,
+      SiteFooter,
       ProjectList,
       LangToggle
   },
@@ -130,4 +133,3 @@ ul{
 }
 
 </style>
-
