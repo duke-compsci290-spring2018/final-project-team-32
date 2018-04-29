@@ -297,7 +297,7 @@
             •	Original birth certificate<br>
             •	Naturalization certificate</p>
 
-          <p>Requirements: <i>Identify yourself with an official document that has photo and signature, the information must match your nationality identification.</i> You may present one of the following:<br>
+          <p><b>Requirements</b>: <i>Identify yourself with an official document that has photo and signature, the information must match your nationality identification.</i> You may present one of the following:<br>
             •	INE voting ID<br>
             •	Professional title<br>
             •	Military ID (applies only to males)<br>
@@ -572,23 +572,23 @@
       <p>Un pasaporte es el documento que se entregará a los ciudadanos de un país con el fin de identificar ellos mismos y ser admitidos en otro país. El pasaporte mexicano es un documento oficial expedido por el Secretario de Relaciones Exteriores. </p>
       <p>Con el fin de obtener su pasaporte mexicano, En primer lugar debe hacer una cita con su oficina local de la SRE <i>(Algunos estados tienen cabina de citas disponibles)</i>. </p>
 
-      <p>The application will be given in person the day of your appointment. Identify your Mexican nationality using one of the following:<br>
-        •	Certified birth certificate<br>
-        •	Original birth certificate<br>
-        •	Naturalization certificate</p>
+      <p>La aplicación se dará en persona el día de su cita. Identificar su nacionalidad mexicana usando uno de los siguientes:<br>
+        • Acta de nacimiento certificada<br>
+        • Acta de nacimiento original<br>
+        • Certificado de Naturalización</p>
 
-      <p>Requirements: <i>Identify yourself with an official document that has photo and signature, the information must match your nationality identification.</i> You may present one of the following:<br>
-        •	INE voting ID<br>
-        •	Professional title<br>
-        •	Military ID (applies only to males)<br>
-        •	INAPAM current ID (applies only for elder people)<br>
-        •	DIF ID (applies only to people with a certain disability)<br>
-        •	Naturalization Letter<br>
-        •	Retired ID or Public Health ID<br>
-        •	Proof of payment<br>
-        •	2 passport size photographs (TIP: get them near SRE office, because they already know how they are requested). They must be without glasses, facing straight, color with white background, uncovered face and recent.</p>
+      <p><b>Requisitos</b>: <i>Identificar a sí mismo - con un documento oficial que tiene la foto y firma, la información debe coincidir con su identificación de la nacionalidad.</i> Usted puede presentar uno de los siguientes:<br>
+        • Identificación de votación INE<br>
+        •	Título profesional<br>
+        • Identificación Militar (se aplica sólo a los varones) <br>
+        • Identificación del INAPAM actual (sólo se aplica para las personas mayores)<br>
+        • Identificación DIF (sólo se aplica a las personas con cierta discapacidad)<br>
+        • Carta de Naturalización<br>
+        • Retirado de identificación o ID de la Salud Pública<br>
+        • Comprobante de pago<br>
+        • 2 fotografías tamaño pasaporte (TIP: conseguir que cerca de la oficina SRE, porque ya saben cómo se solicitan). Deben ser sin gafas, frente recta, de color con fondo blanco, el rostro descubierto y reciente.</p>
 
-      <p>All the documents presented should be in good conditions, without alterations, ripped, and clean. SRE has the faculty to ask you for additional documents and/or information if it considers it. The time it takes to receive your passport varies from state to state. You will be notified the day of your application.
+      <p>Todos los documentos presentados deben estar en buenas condiciones, sin alteraciones, rasgado, y limpio. SRE tiene la facultad de pedir que los documentos y / o información adicional si lo considera. El tiempo que tarda en recibir su pasaporte varía de estado a estado. Se le notificará el día de su solicitud.
       </p>
       </v-card-text>
     </v-card>
@@ -597,14 +597,14 @@
 
 <v-expansion-panel popout focusable>
 <v-expansion-panel-content>
-  <div slot="header"><b>CITIZENSHIP</b>: How can I obtain proof of Mexican citizenship for my US citizen children in Mexico?</div>
+  <div slot="header"><b>CIUDADANÍA</b>: ¿Cómo puedo obtener una prueba de ciudadanía mexicana para mis hijos que son ciudadanos de Estados Unidos en México?</div>
   <v-card>
     <v-card-text>
-      <p>All children of Mexican nationals have the constitutional right to Mexican citizenship. No one needs to renounce any other citizenship, by birth or otherwise. Binational citizenship provides currently important protections in both countries.</p>
+      <p>Todos los hijos de los mexicanos tienen el derecho constitucional de la ciudadanía mexicana. Nadie tiene que renunciar a cualquier otra ciudadanía, por nacimiento o de otra manera. la ciudadanía binacional actualmente proporciona protecciones importantes en ambos países.</p>
 
-      <p>If you need to register your Mexican nationality or the nationality of your children, you need to go to your local “registro civil” with an original birth certificate (from the United States, or another country) and the parent’s birth certificate and identification.</p>
+      <p>Si necesita registrar su nacionalidad mexicana o la nacionalidad de sus hijos, usted tiene que ir a su "Registro Civil" local con un certificado de nacimiento original (de los Estados Unidos, o de otro país) y el certificado de nacimiento de los padres y la identificación.</p>
 
-      <p>For more information, click <a href="http://www.registro-civil.com.mx/acta-nacimiento">here</a> to check if you can request your birth certificate online visit.
+      <p>Para obtener más información, y el enlace para comprobar si se puede solicitar su certificado de nacimiento en línea visite: <a href="http://www.registro-civil.com.mx/acta-nacimiento">aquí</a>.
       </p>
       </v-card-text>
     </v-card>
