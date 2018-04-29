@@ -7,20 +7,24 @@
             <v-flex xs12 sm4>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Company info</div>
+                  <div class="headline" v-if="$store.state.lang ==='eng'">Company info</div>
+                  <div class="headline" v-else>Información de la Organizaciòn</div>
                 </v-card-title>
-                <v-card-text>
+                <v-card-text v-if="$store.state.lang ==='eng'" >
                   OTROS DREAMS EN ACCIÓN IS A BINATIONAL GRASSROOTS COMMUNITY DEDICATED TO MUTUAL SUPPORT AND POLITICAL ACTION BY AND FOR THOSE WHO LIVED IN THE UNITED STATES AND ARE NOW IN MEXICO DUE TO DEPORTATION, THREAT OF DEPORTATION, THE DEPORTATION OF A FAMILY MEMBER, AND/OR OTHER OBSTACLES.
+                </v-card-text>
+                <v-card-text v-else>
+                  OTROS DREAMS EN ACCIÓN ES UNA ORGANIZACIÓN BINACINAL CON SEDE EN MÉXICO. ESTAMOS DEDICADOS AL APOYO MUTUO Y A LA ACCIÓN POLÍTICA POR Y PARA QUIENES VIVIERON EN LOS ESTADOS UNIDOS Y AHORA SE ENCUENTRAN EN MÉXICO A CONSECUENCIA DE UNA DEPORTACIÓN, AMENAZA DE DEPORTACIÓN, LA DEPORTACIÓN DE ALGÚN MIEMBRO DE LA FAMILIA Y/O DEBIDO A OTROS OBSTÁCULOS.
                 </v-card-text>
               </v-card>
             </v-flex>
             <v-flex xs12 sm4 offset-sm1>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Contact us</div>
+                  <div class="headline" v-if="$store.state.lang ==='eng'">Contact us</div>
+                  <div class="headline" v-else >Contáctenos</div>
                 </v-card-title>
                 <v-card-text>
-                  Anytime.
                 </v-card-text>
                 <v-list class="transparent">
                   <v-list-tile>
@@ -54,7 +58,6 @@
         </v-container>
       </section>
     <v-footer color="blue" app inset>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <span class="white--text">&copy; Sierra, Rikki, Charlotte 2018</span>
       <v-spacer></v-spacer>
 

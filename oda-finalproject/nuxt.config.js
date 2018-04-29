@@ -5,12 +5,12 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
-  routerBase,
   // Comment this out when running dev, un-comment when generating and pushing to git 
+  
+router: {
+     base: '/final-project-team-32/oda-finalproject/dist/'
+   },
 
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'oda-finalproject',
     htmlAttrs: {
