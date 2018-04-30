@@ -6,9 +6,10 @@
     <v-content v-if="$store.state.lang ==='eng'">
         <v-container fluid grid-list-xl>
     <v-layout justify-space-around>
+
     <ul class="nav-images">
         <v-flex xs2 class="nav-img">
-            <a href="#" v-scroll-to="'#-LB74ZplvyrrpuZWG0j6'">
+            <a href="#edu">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57d753265016e169debd4989/1473729322973/?format=300w" alt="education">
                 <div id="cats">
                   Education
@@ -16,7 +17,7 @@
             </a>
         </v-flex>
         <v-flex xs2 class="nav-img">
-            <a href="#" v-scroll-to="'#-LB74o9dJC3dpk1TW7lp'">
+            <a href="#jobs">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cd1771ebbd1afd7c11cbf8/1472582296716/?format=300w" alt="job">
                 <div id="cats">
                   Jobs
@@ -24,7 +25,7 @@
             </a>
         </v-flex>
         <v-flex xs2 class="nav-img">
-            <a href="#" v-scroll-to="'#-LB74vjFL1tl0GDKMprJ'">
+            <a href="#travel">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cd1771ebbd1afd7c11cbf9/1472879828578/bookshelf.png?format=300w" alt="travel">
                 <div id="cats">
                   Travel
@@ -32,7 +33,7 @@
             </a>
         </v-flex>
         <v-flex xs2 class="nav-img">
-            <a href="#" v-scroll-to="'#-LB751f5yvYSUPahtRKF'">
+            <a href="#health">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cf818203596edd29edb6f9/1473216902429/?format=300w" alt="health">
                 <div id="cats">
                   Health
@@ -40,7 +41,7 @@
             </a>
         </v-flex>
         <v-flex xs2 class="nav-img">
-            <a href="#" v-scroll-to="'#-LB751f5yvYSUPahtRKF'">
+            <a href="#doc">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cd1771ebbd1afd7c11cbfb/1472582368608/?format=300w" alt="document">
                 <div id="cats">
                   Documentation
@@ -48,7 +49,7 @@
             </a>
         </v-flex>
         <v-flex xs2 class="nav-img">
-            <a href="#" v-scroll-to="'#-LB751f5yvYSUPahtRKF'">
+            <a href="#citi">
                 <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57d73b8b29687fe1896261b9/1473723301538/heart.png?format=300w" alt="citizenship">
                 <div id="cats">
                   Citizenship
@@ -59,7 +60,7 @@
     </v-layout>
     <br>
 
-    <v-expansion-panel popout focusable>
+    <v-expansion-panel popout focusable id="edu">
       <v-expansion-panel-content >
         <div slot="header"><b>EDUCATION</b>: What do I need to do in order to attend a “Bachillerato” or to take a “High School” equivalency exam?</div>
         <v-card>
@@ -156,7 +157,7 @@
       </v-expansion-panel-content>
     </v-expansion-panel>
 
-    <v-expansion-panel popout focusable>
+    <v-expansion-panel popout focusable id="jobs">
     <v-expansion-panel-content>
       <div slot="header"><b>JOBS</b>: What are some good websites where I can search for a job in Mexico?</div>
       <v-card>
@@ -200,7 +201,7 @@
       </v-expansion-panel-content>
     </v-expansion-panel>
 
-    <v-expansion-panel popout focusable>
+    <v-expansion-panel popout focusable id="travel">
     <v-expansion-panel-content>
       <div slot="header"><b>TRAVEL</b>: How can I get a certified copy of my Mexican birth certificate?</div>
       <v-card>
@@ -253,7 +254,7 @@
       </v-expansion-panel-content>
     </v-expansion-panel>
 
-    <v-expansion-panel popout focusable>
+    <v-expansion-panel popout focusable id="health">
     <v-expansion-panel-content>
       <div slot="header"><b>HEALTH</b>: How can I sign up for health insurance in Mexico? And what is the difference between IMSS, ISSSTE, Seguro Popular, etc?</div>
       <v-card>
@@ -283,7 +284,7 @@
       </v-expansion-panel-content>
     </v-expansion-panel>
 
-    <v-expansion-panel popout focusable>
+    <v-expansion-panel popout focusable id="doc">
     <v-expansion-panel-content>
       <div slot="header"><b>DOCUMENTATION</b>: How do I apply for my Mexican passport?</div>
       <v-card>
@@ -314,7 +315,7 @@
       </v-expansion-panel-content>
     </v-expansion-panel>
 
-    <v-expansion-panel popout focusable>
+    <v-expansion-panel popout focusable id="citi">
     <v-expansion-panel-content>
       <div slot="header"><b>CITIZENSHIP</b>: How can I obtain proof of Mexican citizenship for my US citizen children in Mexico?</div>
       <v-card>
@@ -339,7 +340,7 @@
 
 <ul class="nav-images">
     <v-flex xs2 class="nav-img">
-        <a href="#" v-scroll-to="'#-LB74ZplvyrrpuZWG0j6'">
+        <a href="#educ">
             <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57d753265016e169debd4989/1473729322973/?format=300w" alt="education">
             <div id="cats">
               Educación
@@ -347,7 +348,7 @@
         </a>
     </v-flex>
     <v-flex xs2 class="nav-img">
-        <a href="#" v-scroll-to="'#-LB74o9dJC3dpk1TW7lp'">
+        <a href="#trab">
             <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cd1771ebbd1afd7c11cbf8/1472582296716/?format=300w" alt="job">
             <div id="cats">
               Trabajos
@@ -355,7 +356,7 @@
         </a>
     </v-flex>
     <v-flex xs2 class="nav-img">
-        <a href="#" v-scroll-to="'#-LB74vjFL1tl0GDKMprJ'">
+        <a href="#viaje">
             <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cd1771ebbd1afd7c11cbf9/1472879828578/bookshelf.png?format=300w" alt="travel">
             <div id="cats">
               Viaje
@@ -363,7 +364,7 @@
         </a>
     </v-flex>
     <v-flex xs2 class="nav-img">
-        <a href="#" v-scroll-to="'#-LB751f5yvYSUPahtRKF'">
+        <a href="#sani">
             <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cf818203596edd29edb6f9/1473216902429/?format=300w" alt="health">
             <div id="cats">
               Sanidad
@@ -371,7 +372,7 @@
         </a>
     </v-flex>
     <v-flex xs2 class="nav-img">
-        <a href="#" v-scroll-to="'#-LB751f5yvYSUPahtRKF'">
+        <a href="#docu">
             <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57cd1771ebbd1afd7c11cbfb/1472582368608/?format=300w" alt="document">
             <div id="cats">
               Documentación
@@ -379,7 +380,7 @@
         </a>
     </v-flex>
     <v-flex xs2 class="nav-img">
-        <a href="#" v-scroll-to="'#-LB751f5yvYSUPahtRKF'">
+        <a href="#ciu">
             <img src="https://static1.squarespace.com/static/57374fc227d4bd28d984d633/t/57d73b8b29687fe1896261b9/1473723301538/heart.png?format=300w" alt="citizenship">
             <div id="cats">
               Ciudadanía
@@ -390,7 +391,7 @@
 </v-layout>
 <br>
 
-<v-expansion-panel popout focusable>
+<v-expansion-panel popout focusable id="educ">
   <v-expansion-panel-content >
     <div slot="header"><b>EDUCACIÓN</b>: ¿Qué tengo que hacer para asistir a un "Bachillerato" o a tomar un examen de equivalencia de "High School"?</div>
     <v-card>
@@ -438,7 +439,7 @@
   </v-expansion-panel-content>
 </v-expansion-panel>
 
-<v-expansion-panel popout focusable>
+<v-expansion-panel popout focusable id="trab">
 <v-expansion-panel-content>
   <div slot="header"><b>TRABAJOS</b>: ¿Cuáles son algunos buenos sitios web donde puedo buscar un trabajo en México?</div>
   <v-card>
@@ -472,7 +473,7 @@
   </v-expansion-panel-content>
 </v-expansion-panel>
 
-<v-expansion-panel popout focusable>
+<v-expansion-panel popout focusable id="viaje">
 <v-expansion-panel-content>
   <div slot="header"><b>VIAJE</b>: ¿Cómo puedo obtener una copia certificada de mi acta de nacimiento mexicana?</div>
   <v-card>
@@ -531,7 +532,7 @@
   </v-expansion-panel-content>
 </v-expansion-panel>
 
-<v-expansion-panel popout focusable>
+<v-expansion-panel popout focusable id="sani">
 <v-expansion-panel-content>
   <div slot="header"><b>SANIDAD</b>: ¿Cómo puedo contratar un seguro de salud en México? ¿Y cuál es la diferencia entre el IMSS, ISSSTE, Seguro Popular, etc?</div>
   <v-card>
@@ -563,7 +564,7 @@
   </v-expansion-panel-content>
 </v-expansion-panel>
 
-<v-expansion-panel popout focusable>
+<v-expansion-panel popout focusable id="docu">
 <v-expansion-panel-content>
   <div slot="header"><b>DOCUMENTACIÓN</b>: ¿Cómo aplico para mi pasaporte mexicano?</div>
   <v-card>
@@ -594,7 +595,7 @@
   </v-expansion-panel-content>
 </v-expansion-panel>
 
-<v-expansion-panel popout focusable>
+<v-expansion-panel popout focusable id="ciu">
 <v-expansion-panel-content>
   <div slot="header"><b>CIUDADANÍA</b>: ¿Cómo puedo obtener una prueba de ciudadanía mexicana para mis hijos que son ciudadanos de Estados Unidos en México?</div>
   <v-card>
