@@ -3,9 +3,10 @@
 module.exports = {
   // Comment this out when running dev, un-comment when generating and pushing to git 
   
-// router: {
-//      base: '/final-project-team-32/oda-finalproject/dist/'
-//    },
+router: {
+     base: '/final-project-team-32/oda-finalproject/dist/'
+   },
+
 
   head: {
     title: 'oda-finalproject',
