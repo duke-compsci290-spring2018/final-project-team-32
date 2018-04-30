@@ -11,6 +11,9 @@ more comfortable now developing a more complex website. I worked pretty hard to 
 One thing that still isn't working (and I have no idea why) is the image carousel on the Why page. It is there, but only shows up when you click on the big white area. This is particilarly strange considering Rikki
 used my exact code just modified for different data in the Why page and it works perfectly there. I tried posting on Piazza and doing a lot of research but couldn't figure out how to fix it.
 
+Notes (Rikki): 
+I had an incredible experience with this website development. The organization that the group had planning out each section and having a great time with it really. On a personal level, I got to sum up all of the things we learned throughout the semester and put them all together. I learned an incredible amount about Nuxtjs and how it makes it easier to employ Vue and integrate many features into the website. The bilingual aspect of the site was also another great feature of our website that was interesting to implement. From the site header and footer, the About page, Why page, and every other feature of the website we got to collaborate on, I definitely learned an incredible amount and really hope that this website does eventually get utilized for the ODA. 
+
 ## Build Setup
 
 ``` bash
