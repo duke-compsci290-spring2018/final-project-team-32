@@ -16,11 +16,10 @@ Authenticity of the data we used in our application comes from the fact that we 
 ## Discuss both the pros and the cons of different framework possibilities you considered and why you made the decision you did (including choosing not to use any framework)
 We decided to use Nuxt.js because it's basically the same as Vue.js except it's better, as it's able to create a static html page when we run generate -- this is particularly useful when we want to keep the website simple and light without allowing too much time for compilation.
 
-```
-Notes (Sierra):
+>Notes (Sierra):
 In general I am happy with how this website turned out. I learned a lot about Vue, Nuxt, and Firebase and feel more comfortable now developing a more complex website. I worked pretty hard to implement user authorization and authentication (users and admins can donate, admins can add projects to projects page) and the dual language functionality through a Vuex store. Nuxt took a lot of trial and error to figure out but in the end it was nice to generate a static website espeically considering this page is meant to be more informational than a dynamic application.
 
-One thing that still isn't working (and I have no idea why) is the image carousel on the Why page. It is there, but only shows up when you click on the big white area. This is particularly strange considering Rikki used my exact code just modified for different data in the Why page and it works perfectly there. I tried posting on Piazza and doing a lot of research but couldn't figure out how to fix it.
+>One thing that still isn't working (and I have no idea why) is the image carousel on the Why page. It is there, but only shows up when you click on the big white area. This is particularly strange considering Rikki used my exact code just modified for different data in the Why page and it works perfectly there. I tried posting on Piazza and doing a lot of research but couldn't figure out how to fix it.
 ```
 
 ## Build Setup
