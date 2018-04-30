@@ -4,6 +4,15 @@
     <lang-toggle></lang-toggle>
     <v-content>
       <v-container center grid-list-md dark>
+        <v-card> 
+          <v-card-title v-if="$store.state.lang ==='eng'"> <h1> #DREAMERSINMÉXICO </h1> </v-card-title>
+          <v-card-title v-else> <h1> #DREAMERSENMÉXICO </h1> </v-card-title>
+          <v-card-text v-if="$store.state.lang ==='eng'"> We are still dreamers in Mexico. We recognize that the term "dreamer" originally refers to the proposed but failed dream act that would have benefited a limited number of immigrant youth in the US. For ODA, the term "dreamer" connects us to our roots in the US and the struggle for immigrant rights there, while it also reminds us that dreams do not end at the border. We dream of a safer, stronger Mexico. We dream of families re-united. Our dreams are our struggle, and we dream of recognition for all of us who choose to live as bi national citizens with the right to education, employment, and wellbeing in the home of our choice.</v-card-text>
+          <v-card-text v-else> Aún somos "Dreamers" en México. Reconocemos que el término original de “Dreamer” se refiere a la propuesta que nunca pasaba, el llamado DREAM Act, que hubiera resultado en beneficios a un número limitado de jóvenes migrantes en Estados Unidos. Para ODA, el término “Dreamer” nos conecta con nuestras raíces estadounidenses desde México de igual manera que nos recuerda que los sueños no terminan en la frontera y después de la deportación. Sonamos con un México más seguro y fuerte. Sonamos con la reunificación de nuestras familias. Nuestros sueños también son nuestras luchas, y luchamos para que todos y todas gozan del reconocimiento digno como ciudadanos binacionales con el derecho a la educación, al empleo y el poder vivir con nuestras familias en el lugar de nuestra elección.</v-card-text>
+        </v-card>
+<!--         <v-card>
+          <v-card-title> </v-card-title>
+        </v-card> -->
         <v-card align="center"> 
           <Tweet :id="'983717279027179520'" dark></Tweet>
           <div align="center">

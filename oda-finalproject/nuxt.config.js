@@ -7,9 +7,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 module.exports = {
   // Comment this out when running dev, un-comment when generating and pushing to git 
   
-router: {
-     base: '/final-project-team-32/oda-finalproject/dist/'
-   },
+routerBase,
 
   head: {
     title: 'oda-finalproject',
