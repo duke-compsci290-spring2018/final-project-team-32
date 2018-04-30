@@ -1,6 +1,7 @@
 <template>
   <div class="sign-up">
     <v-flex xs4>
+      <!-- Form using english and spanish for creating an account -->
     <p v-if="$store.state.lang==='eng'">Let's create a new account!</p>
     <p v-else>Vamos a crear una cuenta</p>
     <v-form v-if="$store.state.lang==='eng'" v-model="valid">
@@ -102,6 +103,7 @@ export default {
     };
   },
   methods: {
+    // creates a user with email and password in firebase
     signUp: function() {
       let self = this
       firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
@@ -117,19 +119,21 @@ export default {
         }
       );
     },
+    // Writes other important user data to firebase database
     writeUserData: function(userId, name, email, userRole) {
       firebase.database().ref('users/' + userId).set({
         username: name,
         email: email,
         role: userRole,
         amount: 0
-        // profile_picture : imageUrl
     });
     this.email='',
     this.password='',
     this.name='',
     this.role = ''
-}
+},
+
+
 
   }
 }

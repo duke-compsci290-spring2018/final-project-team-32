@@ -14,9 +14,21 @@ const config = {
 };
 
   
+// var currentUserName
+// var currentUserAmount
+// firebase.auth().onAuthStateChanged(function(user) {
+//   firebase.database.ref('users/'+uid+'/name').once('value').then(function(snapshot){
+//     currentUserName = snapshot.val()
+// })
+//   firebase.database.ref('users/'+uid+'/amount').once('value').then(function(snapshot){
+//     currentUserAmount = snapshot.val()
+// })
 
+// })
 !firebase.apps.length ? firebase.initializeApp(config) : ''
 
+export var currentUserName
+export var currentUserAmount
 export const projectsRef = firebase.database().ref('projects')
 // export const auth = firebase.auth()
 export const DB = firebase.database()

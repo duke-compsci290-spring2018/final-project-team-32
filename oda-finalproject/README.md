@@ -2,6 +2,8 @@
 
 > Nuxt.js project
 
+Authors: Sierra Lorenzini, Rikki Kendall, Charlotte Roh
+
 ## Build Setup
 
 ``` bash

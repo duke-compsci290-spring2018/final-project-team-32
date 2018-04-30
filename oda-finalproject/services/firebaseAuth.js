@@ -4,7 +4,7 @@ global.currentRole = ''
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       var userId = firebase.auth().currentUser.uid;
-      firebase.database().ref('users/'+ userId).child('role').once('value').then(function(snapshot){
+      firebase.database().ref('users/'+ userId).child('name').once('value').then(function(snapshot){
         currentRole = snapshot.val();
       });
       console.log("user signed in!");

@@ -4,6 +4,7 @@
     <lang-toggle></lang-toggle>
     <v-content>
     <v-container grid-list-md>
+        <!-- Project index with images at top that when clicked scroll to the project on the page. Automatically updates with firebase when new project is added -->
         <v-layout row justify-space-around>
             <v-flex align-content-space-around=true xs4 v-for="project in projectsTest" :key="project.id">
                     <a href="#" v-scroll-to="'#'+project.linkName">
@@ -15,7 +16,9 @@
             <h2 v-if="$store.state.lang === 'eng'">Our Projects</h2>
             <h2 v-else>Nuestros Proyectos</h2>
         </v-layout>
+    <!-- Project list component -->
         <project-list :projects="projectsTest" title="Our Projects" alt=""></project-list>
+        <!-- Form to add a new project. Is only shown when an admin is signed in -->
         <v-layout row v-if="$store.state.role==='admin'">
             <v-flex xs6>
                 <v-form>
@@ -93,6 +96,7 @@ export default {
     };
   },
   methods : {
+    //   Adds project to firebase
       addProject: function() {
         let self = this
         var myRef = firebase.database().ref().child('projects').push().key
@@ -115,19 +119,8 @@ export default {
 </script>
 
 <style scoped>
-
-ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
 img{
     width: 150px;
 }
-/* #content-container{
-    margin: 2%;
-} */
 
 </style>
