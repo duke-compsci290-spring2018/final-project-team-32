@@ -4,7 +4,7 @@
     <lang-toggle></lang-toggle>
     <v-content>
       <v-container center grid-list-md dark>
-        <v-card> 
+        <v-card align="center"> 
           <v-card-title v-if="$store.state.lang ==='eng'"> <h1> #DREAMERSINMÉXICO </h1> </v-card-title>
           <v-card-title v-else> <h1> #DREAMERSENMÉXICO </h1> </v-card-title>
           <v-card-text v-if="$store.state.lang ==='eng'"> We are still dreamers in Mexico. We recognize that the term "dreamer" originally refers to the proposed but failed dream act that would have benefited a limited number of immigrant youth in the US. For ODA, the term "dreamer" connects us to our roots in the US and the struggle for immigrant rights there, while it also reminds us that dreams do not end at the border. We dream of a safer, stronger Mexico. We dream of families re-united. Our dreams are our struggle, and we dream of recognition for all of us who choose to live as bi national citizens with the right to education, employment, and wellbeing in the home of our choice.</v-card-text>
@@ -14,11 +14,24 @@
           <v-card-title> </v-card-title>
         </v-card> -->
         <v-card align="center"> 
-          <Tweet :id="'983717279027179520'" dark></Tweet>
           <div align="center">
             <a class="twitter-timeline"  href="https://twitter.com/hashtag/dreamers" data-widget-id="990458493500051456">#dreamers Tweets</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
+        </v-card>
+        <v-card align="center">
+          <v-card-title> <h1> #DEAQUÍYDEALLÁ </h1> </v-card-title>
+          <v-text v-if="$store.state.lang ==='eng'">
+            ODA listens to our community and this is what deported and returning youth in Mexico are demanding for their futures in Mexico and in the United States. We often feel "Ni de Aquí, Ni de Allá," invisible in both countries, but we are standing up and demanding recognition and rights. We advocate online and off for the rights of transnational, multilingual, and multicultural people in Mexico and the United States. Invite us to your campus, church, or community to share our stories. If we can’t come in person, we can schedule a virtual teach-in.
+          </v-text>
+          <v-text v-else>
+            ODA escucha a su comunidad y esta página refleja lo que los jóvenes deportados y retornados a México quieren para su futuro en México y Estados Unidos. 
+
+            A veces nos sentimos “ni de aquí, ni de allá,” invisibles en ambos países, pero vemos que podemos decir que somos "de aquí y de allá" con nuestras acciones, y así empezar a reclamar nuestros derechos humanos. 
+
+            Abogamos por los derechos transnacionales, multilingües y multiculturales en México y en Estados Unidos. Invítanos a tu universidad, iglesia o comunidad para compartir nuestras historias. En caso de no poder asistir en persona podemos programar una conferencia virtual.
+          </v-text>
+          <Tweet :id="'983717279027179520'" dark></Tweet>
         </v-card>
       </v-container>
 <!--     <v-layout justify-space-around>
