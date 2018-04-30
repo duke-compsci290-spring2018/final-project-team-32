@@ -8,7 +8,7 @@ Notes (Sierra):
 In general I am happy with how this website turned out. I learned a lot about Vue, Nuxt, and Firebase and feel
 more comfortable now developing a more complex website. I worked pretty hard to implement user authorization and authentication (users and admins can donate, admins can add projects to projects page) and the dual language functionality through a Vuex store. Nuxt took a lot of trial and error to figure out but in the end it was nice to generate a static website espeically considering this page is meant to be more informational than a dynamic application.
 
-One thing that still isn't working (and I have no idea why) is the image carousel on the Why page. It is there, but only shows up when you click on the big white area. This is particilarly strange considering Rikki
+One thing that still isn't working (and I have no idea why) is the image carousel on the Why page. It is there, but only shows up when you click on the big white area. This is particilarly strange considering the Why
 used my exact code just modified for different data in the Why page and it works perfectly there. I tried posting on Piazza and doing a lot of research but couldn't figure out how to fix it.
 
 Notes (Rikki): 
